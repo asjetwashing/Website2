@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutter Vacuuming & Cleaning in Bromsgrove | All Saints Jet Washing</title>
+    <meta name="description" content="Safe and thorough gutter cleaning in Bromsgrove using a SkyVac system. We clear debris, moss, and leaves from the ground.">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="https://allsaintsjetwashing.co.uk/index.html">All Saints Jet Washing</a></div>
+        <button class="hamburger">&#9776;</button>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="https://allsaintsjetwashing.co.uk/index.html">Home</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/jet-washing-bromsgrove.html">Jet Washing</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="https://allsaintsjetwashing.co.uk/index.html">Home</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/jet-washing-bromsgrove.html">Jet Washing</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="service-page" id="gutter-vac-info">
+            <h1>Gutter Vacuuming</h1>
+            <p>At All Saints Jet Washing, we provide safe and thorough gutter cleaning for homes and businesses across Bromsgrove and nearby areas.</p>
+            <div class="before-after-container">
+                <div class="before-after-item">
+                    <h3>Before</h3>
+                    <img src="assets/gutter-cleaning-before-bromsgrove.webp" alt="A gutter full of leaves and moss before cleaning" class="gallery-image">
+                </div>
+                <div class="before-after-item">
+                    <h3>After</h3>
+                    <img src="assets/gutter-cleaning-after-bromsgrove.webp" alt="A clean, clear gutter after vacuuming" class="gallery-image">
+                </div>
+            </div>
+            <p>We use a SkyVac gutter vacuum system, allowing us to clear debris, moss, and leaves from the ground â€” no ladders, no mess, and no risk to your property.</p>
+            <p>The SkyVac system includes a high-level inspection camera, so we can check every section of your guttering before and after cleaning. This ensures the job is done properly and nothing is missed.</p>
+            <h2>Our gutter cleaning service includes:</h2>
+            <ul>
+                <li>Full gutter vacuum cleaning</li>
+                <li>Fascia and soffit washing (if requested)</li>
+                <li>Camera inspection for before and after checks</li>
+            </ul>
+            <p>Regular gutter maintenance helps prevent blockages, leaks, and water damage. Whether you need a one-off clean or routine maintenance, weâ€™ll keep your guttering clear and working as it should.</p>
+            <h2>What is a SkyVac?</h2>
+            <p>The SkyVac is a powerful, high-level vacuuming system that allows us to clean gutters safely from the ground. It uses lightweight carbon fibre poles to reach up to 40ft, and a powerful vacuum to remove all debris, leaves, and moss from your gutters. The system also includes a camera, so we can see what we are doing and ensure a thorough clean.</p>
+            <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button">Contact Us</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 All Saints Jet Washing</p>
+    </footer>
+
+    <div id="lightbox-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="lightbox-image">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <script>
+        const modal = document.getElementById('lightbox-modal');
+        const modalImg = document.getElementById('lightbox-image');
+        const galleryImages = document.querySelectorAll('.gallery-image');
+        const closeBtn = document.querySelector('.close');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        let currentImageIndex;
+
+        galleryImages.forEach((image, index) => {
+            image.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                modalImg.src = image.src;
+                currentImageIndex = index;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        function showImage(index) {
+            modalImg.src = galleryImages[index].src;
+            currentImageIndex = index;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            showImage(currentImageIndex);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            showImage(currentImageIndex);
+        });
+
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
+
+
+
