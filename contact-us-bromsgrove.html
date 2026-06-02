@@ -1,17 +1,267 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="canonical" href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact All Saints Jet Washing in Bromsgrove</title>
-    <meta name="description" content="Contact All Saints Jet Washing for our exterior cleaning services in Bromsgrove. Call, message, or find us on social media.">
+    <meta name="description" content="Contact All Saints Jet Washing for our exterior cleaning services in Bromsgrove. Call, message, or find us on social media. Free, no-obligation quotes.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">
+    <meta property="og:title" content="Contact All Saints Jet Washing in Bromsgrove">
+    <meta property="og:description" content="Contact All Saints Jet Washing for our exterior cleaning services in Bromsgrove. Call, message, or find us on social media.">
+    <meta property="og:image" content="https://allsaintsjetwashing.co.uk/assets/exterior-cleaning-specialists-bromsgrove-hero.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">
+    <meta property="twitter:title" content="Contact All Saints Jet Washing in Bromsgrove">
+    <meta property="twitter:description" content="Contact All Saints Jet Washing for our exterior cleaning services in Bromsgrove. Call, message, or find us on social media.">
+    <meta property="twitter:image" content="https://allsaintsjetwashing.co.uk/assets/exterior-cleaning-specialists-bromsgrove-hero.webp">
+
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ============================================================
+           CONTACT PAGE — Bespoke formless editorial layout
+           ============================================================ */
+
+        /* ── Page intro strip ──────────────────────────────────────── */
+        .contact-intro {
+            text-align: center;
+            padding: 5rem 0 3.5rem;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .contact-intro-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: var(--gold);
+            margin-bottom: 1.1rem;
+        }
+
+        .contact-intro-eyebrow::before,
+        .contact-intro-eyebrow::after {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 1.5px;
+            background: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .contact-intro h1 {
+            font-family: var(--f-serif);
+            font-size: clamp(2.4rem, 4.5vw, 3.75rem);
+            font-weight: 400;
+            color: var(--ink);
+            line-height: 1.12;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.25rem;
+        }
+
+        .contact-intro h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .contact-intro p {
+            font-size: 1.08rem;
+            color: var(--ink-2);
+            line-height: 1.8;
+        }
+
+        /* ── Centered Container & Grid ────────────────────────────── */
+        .contact-container {
+            max-width: 1060px;
+            margin: 0 auto;
+            padding-bottom: 6rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3.5rem;
+        }
+
+        /* Vertical contact cards */
+        .contact-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--r-lg);
+            text-decoration: none;
+            color: inherit;
+            box-shadow: var(--sh-sm);
+            transition: border-color var(--t-mid) var(--ease), box-shadow var(--t-mid) var(--ease), transform var(--t-mid) var(--ease-ex);
+        }
+
+        .contact-card:hover {
+            border-color: var(--gold);
+            box-shadow: var(--sh-md);
+            transform: translateY(-5px);
+        }
+
+        .contact-card-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gold-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.35rem;
+            margin-bottom: 1.5rem;
+            transition: background var(--t-mid) var(--ease), color var(--t-mid) var(--ease);
+        }
+
+        .contact-card-icon i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            line-height: 1;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .contact-card:hover .contact-card-icon {
+            background: var(--gold);
+            color: #fff;
+        }
+
+        .contact-card:hover .contact-card-icon i {
+            color: #fff !important;
+        }
+
+        /* WhatsApp accent */
+        .contact-card.whatsapp:hover { border-color: #25d366; }
+        .contact-card.whatsapp:hover .contact-card-icon { background: #25d366; color: #fff; }
+
+        /* Facebook accent */
+        .contact-card.facebook:hover { border-color: #1877f2; }
+        .contact-card.facebook:hover .contact-card-icon { background: #1877f2; color: #fff; }
+
+        .contact-card-label {
+            font-weight: 700;
+            font-size: 0.76rem;
+            color: var(--ink-2);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 0.6rem;
+        }
+
+        .contact-card-value {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 0.35rem;
+        }
+
+        .contact-card-hint {
+            font-size: 0.8rem;
+            color: var(--ink-3);
+            line-height: 1.5;
+        }
+
+        /* ── Centered service area & trust badges ───────────────────── */
+        .contact-footer {
+            max-width: 680px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2.25rem;
+        }
+
+        .contact-areas {
+            padding: 2.25rem 2.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-top: 3px solid var(--gold);
+            border-radius: var(--r-md);
+            text-align: center;
+            box-shadow: var(--sh-sm);
+        }
+
+        .contact-areas-title {
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .contact-areas p {
+            font-size: 0.9rem;
+            color: var(--ink-2);
+            line-height: 1.7;
+        }
+
+        .contact-trust {
+            display: flex;
+            justify-content: center;
+            gap: 1.75rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--ink-2);
+        }
+
+        .contact-trust-badge i {
+            color: var(--gold);
+            font-size: 0.85rem;
+        }
+
+        /* ── Responsive ────────────────────────────────────────────── */
+        @media (max-width: 860px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+            .contact-intro { padding: 4rem 0 2.5rem; }
+            .contact-container { padding-bottom: 4rem; }
+            .contact-footer { gap: 1.75rem; }
+            .contact-areas { padding: 2rem 1.75rem; }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="logo"><a href="https://allsaintsjetwashing.co.uk/index.html">All Saints Jet Washing</a></div>
-        <button class="hamburger">&#9776;</button>
+        <div class="logo"><a href="https://allsaintsjetwashing.co.uk/index.html"><i class="fa-solid fa-fleur-de-lis" style="color: var(--gold); margin-right: 10px; font-size: 1.3rem;"></i>All Saints Jet Washing</a></div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         <nav class="desktop-nav">
             <ul>
                 <li><a href="https://allsaintsjetwashing.co.uk/index.html">Home</a></li>
@@ -20,7 +270,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
-                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
         </nav>
         <nav class="mobile-nav">
@@ -31,58 +281,88 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
-                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h1>Contact Us</h1>
-            <p>Get in touch with us for a free, no-obligation quote. You can call, message, or find us on social media.</p>
 
-        </section>
-        <section class="social-contact">
-            <h2>Contact us directly</h2>
-            <div class="contact-details">
-                <a href="tel:07940188231" class="contact-card-link">
-                    <div class="contact-card">
+    <main>
+
+        <!-- ── Page intro ──────────────────────────────────────────────── -->
+        <div class="contact-intro">
+            <span class="contact-intro-eyebrow">Free, No-Obligation Quotes</span>
+            <h1>Get in touch with<br><em>All Saints Jet Washing</em></h1>
+            <p>Get in touch with us for a free, no-obligation quote. You can call, message, or find us on social media.</p>
+        </div>
+
+        <!-- ── Centered contact area without form ──────────────────────── -->
+        <div class="contact-container">
+            <div class="contact-grid">
+                <!-- Phone -->
+                <a href="tel:07940188231" class="contact-card" id="contact-phone">
+                    <div class="contact-card-icon">
                         <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <p>07940 188231</p>
-                        <p class="phone-text">(call or message)</p>
                     </div>
+                    <span class="contact-card-label">Phone</span>
+                    <span class="contact-card-value">07940 188231</span>
+                    <span class="contact-card-hint">Call or text for a fast quote response</span>
                 </a>
-                <a href="https://wa.me/447940188231" target="_blank" class="contact-card-link">
-                    <div class="contact-card">
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/447940188231" target="_blank" rel="noopener" class="contact-card whatsapp" id="contact-whatsapp">
+                    <div class="contact-card-icon">
                         <i class="fab fa-whatsapp"></i>
-                        <h3>WhatsApp</h3>
-                        <p>Message us on WhatsApp</p>
                     </div>
+                    <span class="contact-card-label">WhatsApp</span>
+                    <span class="contact-card-value">Message Us</span>
+                    <span class="contact-card-hint">Send photos of your surfaces for a quick estimate</span>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=100090859661130" target="_blank" class="contact-card-link">
-                    <div class="contact-card">
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/profile.php?id=100090859661130" target="_blank" rel="noopener" class="contact-card facebook" id="contact-facebook">
+                    <div class="contact-card-icon">
                         <i class="fab fa-facebook-f"></i>
-                        <h3>Facebook</h3>
-                        <p>Find us on Facebook</p>
                     </div>
+                    <span class="contact-card-label">Facebook</span>
+                    <span class="contact-card-value">Find Us</span>
+                    <span class="contact-card-hint">View our latest cleaning results & reviews</span>
                 </a>
             </div>
-        </section>
+
+            <!-- Service area + Trust badges -->
+            <div class="contact-footer">
+                <div class="contact-areas">
+                    <p class="contact-areas-title"><i class="fa-solid fa-location-dot" style="color:var(--gold); margin-right:6px;"></i>Service Area</p>
+                    <p>We cover Bromsgrove and all nearby surrounding areas. Not sure if we cover your location? Just give us a call or message — we're happy to help.</p>
+                </div>
+                <div class="contact-trust">
+                    <span class="contact-trust-badge"><i class="fas fa-star"></i> 5-Star Rated</span>
+                    <span class="contact-trust-badge"><i class="fas fa-shield-halved"></i> Fully Insured</span>
+                    <span class="contact-trust-badge"><i class="fas fa-clock"></i> Quick Response</span>
+                    <span class="contact-trust-badge"><i class="fas fa-tag"></i> Free Quotes</span>
+                </div>
+            </div>
+        </div>
+
     </main>
+
     <footer>
-        <p>&copy; 2025 All Saints Jet Washing</p>
+        <p>&copy; 2026 All Saints Jet Washing</p>
     </footer>
+
     <script>
+        /* ── Hamburger ─────────────────────────────────────────────── */
         const hamburger = document.querySelector('.hamburger');
-        const nav = document.querySelector('.mobile-nav');
+        const mobileNav = document.querySelector('.mobile-nav');
 
         hamburger.addEventListener('click', () => {
-            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
         });
     </script>
-    
+
 </body>
 </html>
-
-
 

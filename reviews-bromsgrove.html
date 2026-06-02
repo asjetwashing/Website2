@@ -1,17 +1,37 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="canonical" href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Reviews | All Saints Jet Washing in Bromsgrove</title>
     <meta name="description" content="Read customer reviews for All Saints Jet Washing. We are proud of our 5-star rating for exterior cleaning services in Bromsgrove.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">
+    <meta property="og:title" content="Customer Reviews | All Saints Jet Washing in Bromsgrove">
+    <meta property="og:description" content="Read customer reviews for All Saints Jet Washing. We are proud of our 5-star rating for exterior cleaning services in Bromsgrove.">
+    <meta property="og:image" content="https://allsaintsjetwashing.co.uk/assets/exterior-cleaning-specialists-bromsgrove-hero.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">
+    <meta property="twitter:title" content="Customer Reviews | All Saints Jet Washing in Bromsgrove">
+    <meta property="twitter:description" content="Read customer reviews for All Saints Jet Washing. We are proud of our 5-star rating for exterior cleaning services in Bromsgrove.">
+    <meta property="twitter:image" content="https://allsaintsjetwashing.co.uk/assets/exterior-cleaning-specialists-bromsgrove-hero.webp">
+
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo"><a href="https://allsaintsjetwashing.co.uk/index.html">All Saints Jet Washing</a></div>
-        <button class="hamburger">&#9776;</button>
+        <div class="logo"><a href="https://allsaintsjetwashing.co.uk/index.html"><i class="fa-solid fa-fleur-de-lis" style="color: var(--gold); margin-right: 10px; font-size: 1.3rem;"></i>All Saints Jet Washing</a></div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         <nav class="desktop-nav">
             <ul>
                 <li><a href="https://allsaintsjetwashing.co.uk/index.html">Home</a></li>
@@ -20,7 +40,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
-                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
         </nav>
         <nav class="mobile-nav">
@@ -31,7 +51,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
-                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -306,25 +326,26 @@
                             </div>
                         </div>
                     </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Ashley is reliable, honest, well prices and goes a great job. Highly recommended for Windows / driveway cleaning. 5/5 ðŸ‘ <i class="fas fa-quote-right"></i></p>
+                    <p class="review-text"><i class="fas fa-quote-left"></i> Ashley is reliable, honest, well prices and goes a great job. Highly recommended for Windows / driveway cleaning. 5/5 👍 <i class="fas fa-quote-right"></i></p>
                 </div>
             </div>
             <a href="https://g.page/r/Cdw078w7qHbsEBM/review" target="_blank" class="cta-button">Leave a Review</a>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 All Saints Jet Washing</p>
+        <p>&copy; 2026 All Saints Jet Washing</p>
     </footer>
     <script>
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('.mobile-nav');
 
         hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
             nav.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
         });
     </script>
-    
 </body>
 </html>
-
-
 

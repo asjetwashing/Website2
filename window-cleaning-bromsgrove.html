@@ -1,17 +1,570 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="canonical" href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Window Cleaning in Bromsgrove | All Saints Jet Washing</title>
-    <meta name="description" content="Professional window cleaning services in Bromsgrove using the pure water method for a streak-free shine.">
+    <meta name="description" content="Professional window cleaning services in Bromsgrove using the pure water method for a streak-free shine. Regular rounds every 4–6 weeks.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">
+    <meta property="og:title" content="Professional Window Cleaning in Bromsgrove | All Saints Jet Washing">
+    <meta property="og:description" content="Professional window cleaning services in Bromsgrove using the pure water method for a streak-free shine.">
+    <meta property="og:image" content="https://allsaintsjetwashing.co.uk/assets/water-fed-pole-window-cleaning-bromsgrove-1.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">
+    <meta property="twitter:title" content="Professional Window Cleaning in Bromsgrove | All Saints Jet Washing">
+    <meta property="twitter:description" content="Professional window cleaning services in Bromsgrove using the pure water method for a streak-free shine.">
+    <meta property="twitter:image" content="https://allsaintsjetwashing.co.uk/assets/water-fed-pole-window-cleaning-bromsgrove-1.webp">
+
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ============================================================
+           WINDOW CLEANING PAGE — Bespoke page styles
+           Extends the global design system (style.css)
+           Hero lives OUTSIDE <main> as a body flex sibling → naturally
+           spans 100vw without any negative-margin hacks.
+           ============================================================ */
+
+        /* ── Hero: sits between header and main as a flex child of body ── */
+        .svc-hero {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .svc-hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 25%;
+            display: block;
+        }
+
+        /*
+           Two-layer gradient:
+           • Horizontal: deep dark on the left fading right  → keeps left text legible
+           • Vertical:   dark at the bottom fading upward   → grounds the content block
+        */
+        .svc-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(to right, rgba(5,31,53,0.88) 0%, rgba(5,31,53,0.52) 42%, rgba(5,31,53,0.10) 72%, transparent 100%),
+                linear-gradient(to top,   rgba(5,31,53,0.65) 0%, transparent 55%);
+            pointer-events: none;
+        }
+
+        /*
+           Content block sits absolutely at the bottom of the hero.
+           max-width + auto margins keep it centred and aligned with <main>.
+        */
+        .svc-hero-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .svc-hero-eyebrow {
+            font-size: 0.67rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: rgba(255,255,255,0.65);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .svc-hero-eyebrow::before {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 1.5px;
+            background: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .svc-hero h1 {
+            font-family: var(--f-serif);
+            font-size: clamp(2.2rem, 4.5vw, 3.75rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.25);
+        }
+
+        .svc-hero h1 em {
+            font-style: italic;
+            font-weight: 400;
+            color: rgba(255,255,255,0.82);
+        }
+
+        .svc-hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            background: var(--gold);
+            color: #fff;
+            padding: 0.9rem 1.9rem;
+            border-radius: var(--r-pill);
+            font-weight: 700;
+            font-size: 0.74rem;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            text-decoration: none;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.28);
+            transition: background var(--t-mid) var(--ease), transform var(--t-fast) var(--ease), box-shadow var(--t-mid) var(--ease);
+        }
+
+        .svc-hero-cta:hover {
+            background: var(--gold-dk);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+        }
+
+        .svc-hero-cta i { font-size: 0.85em; transition: transform var(--t-mid) var(--ease-ex); }
+        .svc-hero-cta:hover i { transform: translateX(4px); }
+
+        /* ── Feature pills grid ────────────────────────────────────── */
+        .svc-features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            border-radius: var(--r-lg);
+            overflow: hidden;
+            margin: 4rem 0 5rem;
+        }
+
+        .svc-feature-item {
+            background: var(--bg-card);
+            padding: 2.25rem 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            transition: background var(--t-mid) var(--ease);
+        }
+
+        .svc-feature-item:hover { background: #f1f8ff; }
+
+        .svc-feature-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: var(--gold-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .svc-feature-label {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--ink);
+            line-height: 1.3;
+        }
+
+        .svc-feature-desc {
+            font-size: 0.84rem;
+            color: var(--ink-2);
+            line-height: 1.65;
+        }
+
+        /* ── Two-column content block ──────────────────────────────── */
+        .svc-content-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start;
+            margin-bottom: 6rem;
+        }
+
+        .svc-text-col h2 {
+            font-family: var(--f-serif);
+            font-size: clamp(1.7rem, 2.8vw, 2.5rem);
+            font-weight: 400;
+            color: var(--ink);
+            line-height: 1.2;
+            margin-bottom: 1.75rem;
+        }
+
+        .svc-text-col h2 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .svc-text-col p {
+            font-size: 1.02rem;
+            color: var(--ink-2);
+            line-height: 1.85;
+            margin-bottom: 1.35rem;
+        }
+
+        .svc-text-col p:last-of-type { margin-bottom: 2rem; }
+
+        /* Inline stat cards */
+        .svc-stat-row {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .svc-stat {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            padding: 1.1rem 1.4rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--r-md);
+            box-shadow: var(--sh-sm);
+            min-width: 110px;
+        }
+
+        .svc-stat-number {
+            font-family: var(--f-serif);
+            font-size: 1.85rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .svc-stat-label {
+            font-size: 0.72rem;
+            color: var(--ink-3);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        /* Image column */
+        .svc-img-col {
+            position: relative;
+            padding-top: 2rem;
+        }
+
+        .svc-img-main {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--r-lg);
+            box-shadow: var(--sh-xl);
+            border: 3px solid rgba(255,255,255,0.8);
+            display: block;
+        }
+
+        /* Floating badge on the image */
+        .svc-img-badge {
+            position: absolute;
+            bottom: -1.5rem;
+            left: -1.5rem;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.7);
+            border-radius: var(--r-md);
+            padding: 1rem 1.3rem;
+            box-shadow: var(--sh-lg);
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            animation: floatBadge 6s ease-in-out infinite;
+            z-index: 5;
+        }
+
+        .svc-img-badge-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--gold-glow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--gold);
+            font-size: 1rem;
+        }
+
+        .svc-img-badge-text { display: flex; flex-direction: column; gap: 2px; }
+        .svc-img-badge-title { font-weight: 700; font-size: 0.82rem; color: var(--ink); }
+        .svc-img-badge-sub   { font-size: 0.7rem; color: var(--ink-3); }
+
+        /* ── Process steps ─────────────────────────────────────────── */
+        .svc-process {
+            padding: 5.5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 5.5rem;
+            text-align: center;
+            max-width: none !important;
+        }
+
+        .svc-process-eyebrow {
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 0.85rem;
+        }
+
+        .svc-process h2 {
+            font-family: var(--f-serif);
+            font-size: clamp(1.8rem, 3vw, 2.75rem);
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 3.5rem;
+        }
+
+        .svc-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .svc-step {
+            padding: 2.5rem;
+            background: var(--bg-card);
+            border-radius: var(--r-md);
+            border: 1px solid var(--border);
+            box-shadow: var(--sh-sm);
+            transition: border-color var(--t-mid) var(--ease), box-shadow var(--t-mid) var(--ease), transform var(--t-mid) var(--ease-ex);
+        }
+
+        .svc-step:hover {
+            border-color: var(--gold);
+            box-shadow: var(--sh-md);
+            transform: translateY(-4px);
+        }
+
+        .svc-step-num {
+            font-family: var(--f-serif);
+            font-style: italic;
+            font-size: 3.5rem;
+            color: var(--gold);
+            opacity: 0.18;
+            line-height: 1;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .svc-step h3 {
+            font-family: var(--f-serif);
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--ink);
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .svc-step p {
+            font-size: 0.9rem;
+            color: var(--ink-2);
+            line-height: 1.72;
+        }
+
+        /* ── Pull quote ────────────────────────────────────────────── */
+        .svc-quote {
+            margin-bottom: 5.5rem;
+            background: var(--bg-card);
+            border-radius: var(--r-lg);
+            border: 1px solid var(--border);
+            padding: 3.5rem 4rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 3rem;
+            align-items: center;
+            box-shadow: var(--sh-sm);
+        }
+
+        .svc-quote-mark {
+            font-family: var(--f-serif);
+            font-size: 6rem;
+            line-height: 0.8;
+            color: var(--gold);
+            opacity: 0.18;
+            user-select: none;
+        }
+
+        .svc-quote-body blockquote {
+            font-family: var(--f-serif);
+            font-style: italic;
+            font-size: 1.25rem;
+            line-height: 1.75;
+            color: var(--ink-2);
+            margin-bottom: 1.25rem;
+        }
+
+        .svc-quote-attr {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .svc-quote-stars { color: var(--gold); font-size: 0.75rem; display: flex; gap: 2px; }
+
+        .svc-quote-name {
+            font-weight: 700;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--ink);
+        }
+
+        /* ── CTA strip ─────────────────────────────────────────────── */
+        .svc-cta-strip {
+            background: var(--ink);
+            border-radius: var(--r-lg);
+            padding: 4rem 4.5rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 2.5rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .svc-cta-strip h2 {
+            font-family: var(--f-serif);
+            font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+            font-weight: 400;
+            color: #fff;
+            line-height: 1.25;
+        }
+
+        .svc-cta-strip h2 em {
+            font-style: italic;
+            color: rgba(255,255,255,0.65);
+        }
+
+        .svc-cta-strip p {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            line-height: 1.65;
+        }
+
+        .svc-cta-strip-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .svc-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            background: var(--gold);
+            color: #fff;
+            padding: 1rem 2rem;
+            border-radius: var(--r-pill);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            white-space: nowrap;
+            box-shadow: 0 4px 20px rgba(15,108,174,0.35);
+            transition: background var(--t-mid) var(--ease), transform var(--t-fast);
+        }
+
+        .svc-btn-primary:hover { background: var(--gold-dk); transform: translateY(-2px); }
+        .svc-btn-primary i { font-size: 0.88em; transition: transform var(--t-mid) var(--ease-ex); }
+        .svc-btn-primary:hover i { transform: translateX(4px); }
+
+        .svc-btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem;
+            background: transparent;
+            color: rgba(255,255,255,0.7);
+            border: 1.5px solid rgba(255,255,255,0.2);
+            padding: 1rem 2rem;
+            border-radius: var(--r-pill);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.76rem;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            white-space: nowrap;
+            transition: border-color var(--t-mid) var(--ease), color var(--t-mid) var(--ease), transform var(--t-fast);
+        }
+
+        .svc-btn-ghost:hover { border-color: rgba(255,255,255,0.5); color: #fff; transform: translateY(-2px); }
+
+        /* ── Responsive ────────────────────────────────────────────── */
+        @media (max-width: 1100px) {
+            .svc-hero { height: 420px; }
+            .svc-hero-content { padding: 2.5rem 2rem; }
+            .svc-features { grid-template-columns: repeat(2, 1fr); }
+            .svc-content-wrap { grid-template-columns: 1fr; gap: 3rem; }
+            .svc-img-col { padding-top: 0; }
+            .svc-img-main { height: 360px; }
+            .svc-steps { grid-template-columns: 1fr; gap: 1.25rem; }
+            .svc-quote { grid-template-columns: 1fr; gap: 1.5rem; }
+            .svc-quote-mark { font-size: 4rem; }
+            .svc-cta-strip { grid-template-columns: 1fr; gap: 2rem; padding: 3rem 2.5rem; }
+            .svc-cta-strip-btns { flex-direction: row; flex-wrap: wrap; }
+        }
+
+        @media (max-width: 580px) {
+            .svc-hero { height: 320px; }
+            .svc-hero-content { padding: 2rem 1.25rem; }
+            .svc-features { grid-template-columns: 1fr; border-radius: var(--r-md); }
+            .svc-feature-item { padding: 1.75rem 1.5rem; }
+            .svc-steps { grid-template-columns: 1fr; }
+            .svc-step { padding: 2rem 1.5rem; }
+            .svc-quote { padding: 2.25rem 1.75rem; }
+            .svc-cta-strip { padding: 2.5rem 1.75rem; }
+            .svc-img-main { height: 260px; }
+            .svc-img-badge { left: 0; bottom: -1rem; }
+            .svc-cta-strip-btns { flex-direction: column; }
+            .svc-stat-row { gap: 0.85rem; }
+            .svc-stat { min-width: 90px; }
+            .svc-content-wrap { margin-bottom: 4rem; }
+            .svc-process { padding: 4rem 0; margin-bottom: 4rem; }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="logo"><a href="https://allsaintsjetwashing.co.uk/index.html">All Saints Jet Washing</a></div>
-        <button class="hamburger">&#9776;</button>
+        <div class="logo"><a href="https://allsaintsjetwashing.co.uk/index.html"><i class="fa-solid fa-fleur-de-lis" style="color: var(--gold); margin-right: 10px; font-size: 1.3rem;"></i>All Saints Jet Washing</a></div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         <nav class="desktop-nav">
             <ul>
                 <li><a href="https://allsaintsjetwashing.co.uk/index.html">Home</a></li>
@@ -20,7 +573,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
-                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
         </nav>
         <nav class="mobile-nav">
@@ -31,26 +584,165 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
-                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
+    <!--
+        HERO: Direct sibling of <main>, not a child.
+        body { display: flex; flex-direction: column } → this spans 100% naturally.
+    -->
+    <section class="svc-hero" id="window-cleaning-info" aria-label="Window Cleaning Hero">
+        <img
+            src="assets/water-fed-pole-window-cleaning-bromsgrove-1.webp"
+            alt="A professional window cleaner using a water-fed pole system to clean windows on a house in Bromsgrove"
+            class="svc-hero-img"
+            width="1200" height="500"
+            fetchpriority="high"
+        >
+        <div class="svc-hero-content">
+            <span class="svc-hero-eyebrow">Bromsgrove &amp; Surrounding Areas</span>
+            <h1>Window Cleaning<br>in Bromsgrove, <em>Done Right.</em></h1>
+            <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="svc-hero-cta">
+                Get a Free Quote <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
     <main>
-        <section class="service-page" id="window-cleaning-info">
-            <h1>Window Cleaning in Bromsgrove</h1>
-            <p>At All Saints Jet Washing, we provide professional exterior window cleaning across Bromsgrove and nearby areas.</p>
-            <p>We use the pure water cleaning method, which leaves glass spotless and streak-free without the need for detergents or chemicals.</p>
-            <img src="assets/water-fed-pole-window-cleaning-bromsgrove-1.webp" alt="A window cleaner using a water-fed pole to clean an upstairs window" class="service-page-image">
-            <p>Our water-fed pole system allows us to clean windows, frames and sills safely from the ground, even on upper floors.</p>
-            <p>This method gives excellent results and keeps your windows cleaner for longer.</p>
-            <img src="assets/residential-window-cleaning-bromsgrove-2.webp" alt="Sparkling clean windows on a house" class="service-page-image">
-            <p>We offer regular window cleaning rounds every 4, 5 or 6 weeks, as well as one-off cleans to suit your needs. We already have an established window cleaning round in Bromsgrove, so you can be sure of a reliable and regular service.</p>
-            <p>Whether you're looking for a regular service or a one-time clean, All Saints Jet Washing keeps your windows looking their best all year round.</p>
-            <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button">Contact Us</a>
+
+        <!-- ── Feature Pills ──────────────────────────────────────────── -->
+        <div class="svc-features">
+            <div class="svc-feature-item">
+                <div class="svc-feature-icon"><i class="fa-solid fa-droplet"></i></div>
+                <span class="svc-feature-label">Pure Water Method</span>
+                <p class="svc-feature-desc">We use purified, deionised water — no detergents or chemicals needed. Naturally streak-free results every time.</p>
+            </div>
+            <div class="svc-feature-item">
+                <div class="svc-feature-icon"><i class="fa-solid fa-star"></i></div>
+                <span class="svc-feature-label">Streak-Free Shine</span>
+                <p class="svc-feature-desc">Pure water dries spotlessly clean, leaving your glass crystal clear without any residue, smears, or water marks.</p>
+            </div>
+            <div class="svc-feature-item">
+                <div class="svc-feature-icon"><i class="fa-solid fa-arrow-up"></i></div>
+                <span class="svc-feature-label">All Floors Reached</span>
+                <p class="svc-feature-desc">Our extending water-fed pole system safely reaches upper floors from the ground — no ladders, no fuss.</p>
+            </div>
+            <div class="svc-feature-item">
+                <div class="svc-feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <span class="svc-feature-label">Regular Rounds</span>
+                <p class="svc-feature-desc">Choose a cleaning round every 4, 5 or 6 weeks. We already serve an established round in Bromsgrove.</p>
+            </div>
+        </div>
+
+        <!-- ── Two-Column Content ──────────────────────────────────────── -->
+        <div class="svc-content-wrap">
+
+            <div class="svc-text-col">
+                <h2>Professional exterior window cleaning using the <em>pure water system</em></h2>
+                <p>At All Saints Jet Washing, we provide professional exterior window cleaning across Bromsgrove and nearby areas. Our pure water cleaning method leaves glass spotless and streak-free without the need for detergents or chemicals.</p>
+                <p>Our water-fed pole system allows us to clean windows, frames and sills safely from the ground, even on upper floors. This method gives excellent results and keeps your windows cleaner for longer — because the purified water attracts no new dust or dirt when it dries.</p>
+                <p>We offer regular window cleaning rounds every 4, 5 or 6 weeks, as well as one-off cleans to suit your needs. We already have an established window cleaning round in Bromsgrove, so you can be sure of a reliable and regular service.</p>
+
+                <div class="svc-stat-row">
+                    <div class="svc-stat">
+                        <span class="svc-stat-number">5★</span>
+                        <span class="svc-stat-label">Rated Service</span>
+                    </div>
+                    <div class="svc-stat">
+                        <span class="svc-stat-number">4–6</span>
+                        <span class="svc-stat-label">Week Rounds</span>
+                    </div>
+                    <div class="svc-stat">
+                        <span class="svc-stat-number">0</span>
+                        <span class="svc-stat-label">Chemicals Used</span>
+                    </div>
+                </div>
+
+                <p>Whether you're looking for a regular service or a one-time clean, All Saints Jet Washing keeps your windows looking their best all year round.</p>
+                <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="btn-olive-gold">
+                    Get a Free Quote <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="svc-img-col">
+                <img
+                    src="assets/residential-window-cleaning-bromsgrove-2.webp"
+                    alt="Sparkling clean windows on a residential property in Bromsgrove"
+                    class="svc-img-main"
+                    width="600" height="500"
+                    loading="lazy"
+                >
+                <div class="svc-img-badge">
+                    <div class="svc-img-badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="svc-img-badge-text">
+                        <span class="svc-img-badge-title">Fully Insured</span>
+                        <span class="svc-img-badge-sub">Professional &amp; Reliable</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ── How It Works ────────────────────────────────────────────── -->
+        <section class="svc-process">
+            <span class="svc-process-eyebrow">How It Works</span>
+            <h2>Three simple steps to sparkling windows</h2>
+
+            <div class="svc-steps">
+                <div class="svc-step">
+                    <span class="svc-step-num">01</span>
+                    <h3>Get in touch for a free quote</h3>
+                    <p>Call or message us and we'll arrange a no-obligation quote for your property. We cover Bromsgrove and all surrounding areas and can usually book you in quickly.</p>
+                </div>
+                <div class="svc-step">
+                    <span class="svc-step-num">02</span>
+                    <h3>We clean using the pure water system</h3>
+                    <p>Our water-fed pole brushes and purified water deep-clean glass, frames and sills simultaneously — all safely from the ground, with no ladders needed.</p>
+                </div>
+                <div class="svc-step">
+                    <span class="svc-step-num">03</span>
+                    <h3>Crystal-clear results, every visit</h3>
+                    <p>The pure water dries completely spotless. We'll set you up on a regular round — every 4, 5 or 6 weeks — so your windows always look their best.</p>
+                </div>
+            </div>
         </section>
+
+        <!-- ── Customer Pull Quote ─────────────────────────────────────── -->
+        <div class="svc-quote">
+            <div class="svc-quote-mark" aria-hidden="true">&ldquo;</div>
+            <div class="svc-quote-body">
+                <blockquote>We were long overdue for our windows, gutters and facias to be cleaned. Ashley was recommended to us — he came out to give us a quote and within the week the work was all done! Arrived on time and finished the job to a high standard! Looks brand new again! Highly recommended.</blockquote>
+                <div class="svc-quote-attr">
+                    <div class="svc-quote-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span class="svc-quote-name">Kat Quinn — Google Review</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── CTA Strip ───────────────────────────────────────────────── -->
+        <div class="svc-cta-strip">
+            <div>
+                <h2>Ready for <em>crystal-clear</em> windows?</h2>
+                <p>Get in touch today for a free, no-obligation quote. We serve Bromsgrove and all surrounding areas.</p>
+            </div>
+            <div class="svc-cta-strip-btns">
+                <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="svc-btn-primary">
+                    Get a Free Quote <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/447940188231" target="_blank" rel="noopener" class="svc-btn-ghost">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+
     </main>
+
     <footer>
-        <p>&copy; 2025 All Saints Jet Washing</p>
+        <p>&copy; 2026 All Saints Jet Washing</p>
     </footer>
 
     <script>
@@ -58,12 +750,13 @@
         const nav = document.querySelector('.mobile-nav');
 
         hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
             nav.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
         });
     </script>
 
 </body>
 </html>
-
-
 
