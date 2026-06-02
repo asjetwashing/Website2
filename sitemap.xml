@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -28,4 +29,36 @@
     <loc>https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html</loc>
     <lastmod>2025-12-23</lastmod>
   </url>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://allsaintsjetwashing.co.uk/index.html</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://allsaintsjetwashing.co.uk/jet-washing-bromsgrove.html</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html</loc>
+    <lastmod>2025-12-23</lastmod>
+  </url>
+>>>>>>> 23727ba919a04ab9afcc233c56ad48d3f89bc49e
 </urlset>
