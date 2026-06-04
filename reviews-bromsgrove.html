@@ -4,25 +4,313 @@
     <link rel="canonical" href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Reviews | All Saints Jet Washing in Bromsgrove</title>
-    <meta name="description" content="Read customer reviews for All Saints Jet Washing. We are proud of our 5-star rating for exterior cleaning services in Bromsgrove.">
-    
+    <title>Reviews & Recommendations | All Saints Jet Washing in Bromsgrove</title>
+    <meta name="description" content="Read verified 5-star Google reviews and Facebook recommendations for All Saints Jet Washing. Trusted exterior cleaning services in Bromsgrove.">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">
-    <meta property="og:title" content="Customer Reviews | All Saints Jet Washing in Bromsgrove">
-    <meta property="og:description" content="Read customer reviews for All Saints Jet Washing. We are proud of our 5-star rating for exterior cleaning services in Bromsgrove.">
+    <meta property="og:title" content="Reviews & Recommendations | All Saints Jet Washing in Bromsgrove">
+    <meta property="og:description" content="Read verified 5-star Google reviews and Facebook recommendations for All Saints Jet Washing. Trusted exterior cleaning services in Bromsgrove.">
     <meta property="og:image" content="https://allsaintsjetwashing.co.uk/assets/exterior-cleaning-specialists-bromsgrove-hero.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">
-    <meta property="twitter:title" content="Customer Reviews | All Saints Jet Washing in Bromsgrove">
-    <meta property="twitter:description" content="Read customer reviews for All Saints Jet Washing. We are proud of our 5-star rating for exterior cleaning services in Bromsgrove.">
+    <meta property="twitter:title" content="Reviews & Recommendations | All Saints Jet Washing in Bromsgrove">
+    <meta property="twitter:description" content="Read verified 5-star Google reviews and Facebook recommendations for All Saints Jet Washing.">
     <meta property="twitter:image" content="https://allsaintsjetwashing.co.uk/assets/exterior-cleaning-specialists-bromsgrove-hero.webp">
 
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ── Reviews page header ─────────────────────────────────── */
+        .reviews-page-header {
+            text-align: center;
+            padding: 5rem 1.5rem 2rem;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .reviews-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: var(--gold);
+            margin-bottom: 1.1rem;
+        }
+        .reviews-eyebrow::before,
+        .reviews-eyebrow::after {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 1.5px;
+            background: var(--gold);
+            flex-shrink: 0;
+        }
+        .reviews-page-header h1 {
+            font-family: var(--f-serif);
+            font-size: clamp(2rem, 4.5vw, 3.2rem);
+            font-weight: 400;
+            color: var(--ink);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+        }
+        .reviews-page-header h1 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+        .reviews-page-header p {
+            font-size: 0.97rem;
+            color: var(--ink-2);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        /* ── Summary pills ───────────────────────────────────────── */
+        .summary-bars-container {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .rating-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: var(--r-pill);
+            padding: 0.6rem 1.25rem;
+            box-shadow: var(--sh-sm);
+        }
+        .rating-pill .pill-icon { width: 20px; height: 20px; flex-shrink: 0; }
+        .rating-pill .pill-icon.fb { fill: #1877f2; }
+        .rating-pill .pill-score { font-size: 1rem; font-weight: 800; color: var(--ink); }
+        .rating-pill .pill-stars { display: flex; gap: 2px; color: #fbbc04; font-size: 0.7rem; }
+        .rating-pill .pill-label { font-size: 0.78rem; font-weight: 600; color: var(--ink-2); white-space: nowrap; }
+        .rating-pill .pill-recommend { display: inline-flex; align-items: center; gap: 4px; font-size: 0.78rem; font-weight: 700; color: #1877f2; }
+
+        /* ── Filter Bar ──────────────────────────────────────────── */
+        .filter-container-wrapper {
+            text-align: center;
+            max-width: 1000px;
+            margin: 1.5rem auto 2rem;
+            padding: 0 1rem;
+        }
+        .filter-bar {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3rem;
+            flex-wrap: wrap;
+            padding: 0.4rem;
+            background: rgba(8,35,58,0.04);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        .filter-btn {
+            font-family: var(--f-sans);
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--ink-2);
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: background 0.2s, color 0.2s;
+        }
+        .filter-btn i { font-size: 0.8rem; }
+        .filter-btn:hover { color: var(--ink); background: rgba(255,255,255,0.7); }
+        .filter-btn.active { background: var(--gold); color: #fff; font-weight: 700; }
+        .reviews-count-status {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--ink-3);
+            margin-top: 0.85rem;
+        }
+
+        /* ── Reviews grid ────────────────────────────────────────── */
+        .reviews-section {
+            max-width: 1140px;
+            margin: 0 auto 2rem;
+            padding: 0 1rem 4rem;
+        }
+        .reviews-masonry {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            align-items: start;
+        }
+
+        /* ── Review cards ────────────────────────────────────────── */
+        .review-card-g,
+        .review-card-fb {
+            background: #fff;
+            border-radius: var(--r-md);
+            padding: 1.4rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--sh-sm);
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+            transition: box-shadow 0.25s, transform 0.25s;
+        }
+        .review-card-g:hover,
+        .review-card-fb:hover {
+            box-shadow: var(--sh-md);
+            transform: translateY(-3px);
+        }
+        .review-card-g { border-top: 3px solid rgba(66,133,244,0.35); }
+        .review-card-g:hover { border-top-color: #4285F4; }
+        .review-card-fb { border-left: 3px solid rgba(24,119,242,0.35); }
+        .review-card-fb:hover { border-left-color: #1877f2; }
+
+        .review-card-g-top,
+        .review-card-fb-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .review-avatar-g,
+        .review-avatar-fb {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.95rem;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .review-avatar-g { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dk) 100%); }
+        .review-avatar-fb { background: linear-gradient(135deg, #1877f2 0%, #0d47a1 100%); }
+
+        .review-meta-g,
+        .review-meta-fb { flex: 1; min-width: 0; }
+
+        .review-name-g,
+        .review-name-fb {
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: var(--ink);
+            line-height: 1.3;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .review-stars-g { display: flex; gap: 2px; color: #fbbc04; font-size: 0.68rem; margin-top: 3px; }
+        .review-recommend-fb {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 3px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: #1877f2;
+        }
+        .review-date-g,
+        .review-date-fb { font-size: 0.68rem; color: var(--ink-3); margin-top: 2px; }
+
+        .google-g-badge svg { width: 18px; height: 18px; display: block; flex-shrink: 0; }
+        .facebook-f-badge {
+            width: 22px; height: 22px;
+            border-radius: 5px;
+            background: #1877f2;
+            color: #fff;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.7rem;
+            flex-shrink: 0;
+        }
+        .facebook-f-badge i { color: #fff !important; }
+
+        .review-body-g,
+        .review-body-fb { font-size: 0.9rem; line-height: 1.72; color: var(--ink-2); flex: 1; }
+
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #2e7d32;
+            background: rgba(46,125,50,0.08);
+            border-radius: 4px;
+            padding: 2px 6px 2px 4px;
+        }
+        .verified-badge i { font-size: 0.68rem; }
+
+        .review-tags-container { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+        .service-tag {
+            font-size: 0.63rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--ink-3);
+            background: rgba(8,35,58,0.05);
+            border-radius: 4px;
+            padding: 2px 7px;
+        }
+
+        .review-footer-g,
+        .review-footer-fb {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.68rem;
+            font-weight: 600;
+            color: var(--ink-3);
+        }
+        .review-footer-g svg { width: 12px; height: 12px; flex-shrink: 0; }
+        .review-footer-fb { color: #1877f2; }
+        .review-footer-fb i { font-size: 0.78rem; flex-shrink: 0; }
+
+        /* ── Animate / hide ──────────────────────────────────────── */
+        .review-card-hidden { display: none !important; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(14px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .review-card-animate { animation: fadeInUp 0.35s ease both; }
+
+        /* ── CTA ─────────────────────────────────────────────────── */
+        .reviews-cta-block { text-align: center; padding: 1rem 0 5rem; }
+        .reviews-cta-block p { font-size: 1rem; color: var(--ink-2); margin-bottom: 1.5rem; }
+
+        /* ── Responsive ──────────────────────────────────────────── */
+        @media (max-width: 1100px) { .reviews-masonry { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 820px)  { .filter-btn { padding: 0.45rem 0.85rem; font-size: 0.74rem; } }
+        @media (max-width: 650px)  {
+            .summary-bars-container { flex-direction: column; align-items: center; }
+            .rating-pill { width: 100%; max-width: 320px; justify-content: center; }
+        }
+        @media (max-width: 580px)  {
+            .reviews-masonry { grid-template-columns: 1fr; }
+            .reviews-page-header { padding: 3.5rem 1.5rem 1.5rem; }
+            .reviews-section { padding-bottom: 2rem; }
+            .reviews-cta-block { padding: 1rem 0 2.5rem; }
+            .filter-bar { width: 100%; }
+            .filter-btn { flex: 1; justify-content: center; font-size: 0.7rem; padding: 0.45rem 0.5rem; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -39,6 +327,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
@@ -50,295 +339,575 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
-                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="reviews-page">
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Suzi Creed</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Father and son combo were excellent. Very personable and extremely efficient. Had all of our facia's, gutters and PVS cleaned- very reasonably priced. Would highly recommend. <i class="fas fa-quote-right"></i></p>
+
+        <!-- ── Page header ──────────────────────────────────────── -->
+        <div class="reviews-page-header">
+            <span class="reviews-eyebrow">Customer Reviews</span>
+            <h1>What our customers <em>say</em></h1>
+            <p>Every review below is a genuine, verified customer review from Google or recommendation from Facebook. We are proud of our 5-star reputation and work hard to maintain it on every job.</p>
+
+            <div class="summary-bars-container">
+                <!-- Google rating pill -->
+                <div class="rating-pill">
+                    <svg class="pill-icon" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Google">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    <span class="pill-score">5.0</span>
+                    <span class="pill-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </span>
+                    <span class="pill-label">Google Reviews</span>
                 </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Kat Quinn</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> We were long overdue for our windows, gutters and facias to be cleaned. Ashley was recommended to us - he came out to give us a quote and within the week the work was all done! Arrived on time and finished the job to a high standard! Looks brand new again! Thanks so much! Highly recommended and will most definitely be using this company again. <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Deborah Barnes</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Definitely recommend this company. Did a great job cleaning our facia's and guttering . <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Kathryn Jordan</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Ash always does an excellent job, he clearly takes pride in his work. Would highly recommend! <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Karin Plimmer</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Had my gutters cleaned by these gents, fast and effective service, gone within 90 minutes, very friendly, definitely be using again. <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Jon Walsh</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Had my guttering cleared and they provided an excellent service. Worth every penny !!! <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Matt Hare</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Fantastic job, really pleased. Thorough clean afterwards too. <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">sian oakley</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Service was done to a high standard and timely manner. Price was very fair and overall would use this company again <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Mark McCarron</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Massive improvement to our drive. Removed all weeds,moss,dirt to the drive door steps, edging brickwork & re-sanding. I would highly recommend using All Saints jet washing. Very professional & would definitely use again. <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Lee Ball</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Highly recommend All Saints Jet washing prompt service and did a fantastic job patio looks brand new again and Ash left the area spotless <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">John Byrom</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Ashley did an excellent job of cleaning and emptying our guttering: he was reliable and friendly. I think he's done about half of our street now, but I would definitely recommend their services in future! <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Robert Tait</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Ashley has made a brilliant job of cleaning all the ends of the rafters allowing a view of the paintwork and even managed to reach over a carport. He has also jet washed our patio with excellent results. He obviously takes great pride in his work. Thank you <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Martyn Squire</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Huge improvement in my driveway and patio! All completed very professionally and timely. Will definitely be using All Saints Jet Washing again! <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">Paul Turner</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Great service and very good standard of work. Would recommend <i class="fas fa-quote-right"></i></p>
-                </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div class="reviewer-info">
-                            <p class="review-author">twintron</p>
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="review-text"><i class="fas fa-quote-left"></i> Ashley is reliable, honest, well prices and goes a great job. Highly recommended for Windows / driveway cleaning. 5/5 👍 <i class="fas fa-quote-right"></i></p>
+
+                <!-- Facebook rating pill -->
+                <div class="rating-pill">
+                    <svg class="pill-icon fb" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Facebook">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    <span class="pill-score">100%</span>
+                    <span class="pill-recommend">
+                        <i class="fas fa-thumbs-up"></i> Recommend
+                    </span>
+                    <span class="pill-label">Facebook</span>
                 </div>
             </div>
-            <a href="https://g.page/r/Cdw078w7qHbsEBM/review" target="_blank" class="cta-button">Leave a Review</a>
-        </section>
+        </div>
+
+        <!-- ── Topic Filter Bar ────────────────────────────────────── -->
+        <div class="filter-container-wrapper">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Reviews</button>
+                <button class="filter-btn" data-filter="driveway">Driveway &amp; Patio</button>
+                <button class="filter-btn" data-filter="windows">Window Cleaning</button>
+                <button class="filter-btn" data-filter="gutters">Gutter Cleaning</button>
+                <button class="filter-btn" data-filter="fascia">Fascia &amp; PVC</button>
+            </div>
+            <div class="reviews-count-status" id="reviews-count-status">
+                Showing all reviews
+            </div>
+        </div>
+
+        <!-- ── Reviews grid ──────────────────────────────────────── -->
+        <div class="reviews-section">
+            <div class="reviews-masonry">
+
+                <!-- 1. Martyn Squire (Google) -->
+                <div class="review-card-g" data-category="driveway" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">M</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Martyn Squire</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Huge improvement in my driveway and patio! All completed very professionally and timely. Will definitely be using All Saints Jet Washing again!</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 2. Suzi Creed (Google) -->
+                <div class="review-card-g" data-category="fascia gutters" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">S</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Suzi Creed</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">7 months ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Father and son combo were excellent. Very personable and extremely efficient. Had all of our facia's, gutters and PVS cleaned — very reasonably priced. Would highly recommend.</p>
+                    <div class="review-tags-container"><span class="service-tag">Fascia & PVC</span><span class="service-tag">Gutter Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 3. Ryan (Google) -->
+                <div class="review-card-g" data-category="driveway windows" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">R</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Ryan</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">6 months ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">All Saints Jet Washing are by far the best exterior cleaners I've come across, used a few companies throughout the years but Ashley and Brad really do go above and beyond — they jet washed my drive and even cleaned the windows as part of the service. Extremely professional and cannot recommend enough!</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span><span class="service-tag">Window Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 4. Kat Quinn (Google) -->
+                <div class="review-card-g" data-category="windows gutters fascia" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">K</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Kat Quinn</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">10 months ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">We were long overdue for our windows, gutters and facias to be cleaned. Ashley was recommended to us — he came out to give us a quote and within the week the work was all done! Arrived on time and finished the job to a high standard! Looks brand new again! Thanks so much! Highly recommended and will most definitely be using this company again.</p>
+                    <div class="review-tags-container"><span class="service-tag">Window Cleaning</span><span class="service-tag">Gutter Cleaning</span><span class="service-tag">Fascia & PVC</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 5. John Byrom (Google) -->
+                <div class="review-card-g" data-category="gutters" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">J</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">John Byrom</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Ashley did an excellent job of cleaning and emptying our guttering: he was reliable and friendly. I think he's done about half of our street now, but I would definitely recommend their services in future!</p>
+                    <div class="review-tags-container"><span class="service-tag">Gutter Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 6. Robert Tait (Google) -->
+                <div class="review-card-g" data-category="fascia driveway" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">R</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Robert Tait</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Ashley has made a brilliant job of cleaning all the ends of the rafters allowing a view of the paintwork and even managed to reach over a carport. He has also jet washed our patio with excellent results. He obviously takes great pride in his work. Thank you</p>
+                    <div class="review-tags-container"><span class="service-tag">Fascia & PVC</span><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 7. Mark McCarron (Google) -->
+                <div class="review-card-g" data-category="driveway" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">M</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Mark McCarron</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Massive improvement to our drive. Removed all weeds, moss, dirt to the drive, door steps, edging brickwork &amp; re-sanding. I would highly recommend using All Saints Jet Washing. Very professional &amp; would definitely use again.</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 8. twintron (Google) -->
+                <div class="review-card-g" data-category="windows driveway" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">T</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">twintron</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Ashley is reliable, honest, well priced and does a great job. Highly recommended for Windows / driveway cleaning. 5/5 👍</p>
+                    <div class="review-tags-container"><span class="service-tag">Window Cleaning</span><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 9. Deborah Barnes (Google) -->
+                <div class="review-card-g" data-category="fascia gutters" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">D</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Deborah Barnes</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Definitely recommend this company. Did a great job cleaning our facia's and guttering.</p>
+                    <div class="review-tags-container"><span class="service-tag">Fascia & PVC</span><span class="service-tag">Gutter Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 10. Kathryn Jordan (Google) -->
+                <div class="review-card-g" data-category="general" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">K</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Kathryn Jordan</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Ash always does an excellent job, he clearly takes pride in his work. Would highly recommend!</p>
+                    <div class="review-tags-container"><span class="service-tag">Exterior Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 11. Karin Plimmer (Google) -->
+                <div class="review-card-g" data-category="gutters" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">K</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Karin Plimmer</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Had my gutters cleaned by these gents, fast and effective service, gone within 90 minutes, very friendly, definitely be using again.</p>
+                    <div class="review-tags-container"><span class="service-tag">Gutter Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 12. Lee Ball (Google) -->
+                <div class="review-card-g" data-category="driveway" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">L</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Lee Ball</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Highly recommend All Saints Jet Washing — prompt service and did a fantastic job, patio looks brand new again and Ash left the area spotless.</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 13. Jon Walsh (Google) -->
+                <div class="review-card-g" data-category="gutters" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">J</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Jon Walsh</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Had my guttering cleared and they provided an excellent service. Worth every penny!!!</p>
+                    <div class="review-tags-container"><span class="service-tag">Gutter Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 14. Sian Oakley (Google) -->
+                <div class="review-card-g" data-category="general" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">S</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Sian Oakley</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Service was done to a high standard and timely manner. Price was very fair and overall would use this company again.</p>
+                    <div class="review-tags-container"><span class="service-tag">Exterior Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 15. Matt Hare (Google) -->
+                <div class="review-card-g" data-category="general" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">M</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Matt Hare</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Fantastic job, really pleased. Thorough clean afterwards too.</p>
+                    <div class="review-tags-container"><span class="service-tag">Exterior Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 16. Paul Turner (Google) -->
+                <div class="review-card-g" data-category="general" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">P</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Paul Turner</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A year ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Great service and very good standard of work. Would recommend.</p>
+                    <div class="review-tags-container"><span class="service-tag">Exterior Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 17. Izzy O'connor (Google) -->
+                <div class="review-card-g" data-category="general" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">I</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Izzy O'connor</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">A month ago</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Great results fantastic service.</p>
+                    <div class="review-tags-container"><span class="service-tag">Exterior Cleaning</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 23. Local Customer (Google) -->
+                <div class="review-card-g" data-category="driveway" data-source="google">
+                    <div class="review-card-g-top">
+                        <div class="review-avatar-g">L</div>
+                        <div class="review-meta-g">
+                            <div class="review-name-g">Local Customer</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-stars-g"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-g">Google Review</div>
+                        </div>
+                        <div class="google-g-badge">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        </div>
+                    </div>
+                    <p class="review-body-g">Ashley jet washed our driveway and patio — absolutely transformed. He arrived on time, worked efficiently and left everything spotless. The difference is incredible. Will definitely be booking again and would highly recommend to anyone in the area.</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-g">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                        Posted on Google
+                    </div>
+                </div>
+
+                <!-- 18. Taron Curtis (Facebook) -->
+                <div class="review-card-fb" data-category="general" data-source="facebook">
+                    <div class="review-card-fb-top">
+                        <div class="review-avatar-fb">T</div>
+                        <div class="review-meta-fb">
+                            <div class="review-name-fb">Taron Curtis</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-recommend-fb">
+                                <i class="fas fa-thumbs-up"></i> Recommends All Saints Jet Washing
+                            </div><span class="verified-badge" style="color: #1877f2; background: rgba(24, 119, 242, 0.08);"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-fb">Facebook Recommendation</div>
+                        </div>
+                        <div class="facebook-f-badge">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                    <p class="review-body-fb">Professional service definitely recommend.</p>
+                    <div class="review-tags-container"><span class="service-tag">Exterior Cleaning</span></div>
+                    <div class="review-footer-fb">
+                        <i class="fab fa-facebook-f"></i> Recommended on Facebook
+                    </div>
+                </div>
+
+                <!-- 19. Tanya Mccarron (Facebook) -->
+                <div class="review-card-fb" data-category="driveway" data-source="facebook">
+                    <div class="review-card-fb-top">
+                        <div class="review-avatar-fb">T</div>
+                        <div class="review-meta-fb">
+                            <div class="review-name-fb">Tanya Mccarron</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-recommend-fb">
+                                <i class="fas fa-thumbs-up"></i> Recommends All Saints Jet Washing
+                            </div><span class="verified-badge" style="color: #1877f2; background: rgba(24, 119, 242, 0.08);"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-fb">Facebook Recommendation</div>
+                        </div>
+                        <div class="facebook-f-badge">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                    <p class="review-body-fb">Highly recommended, did a fab job of cleaning my drive. Looks like new 😊</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-fb">
+                        <i class="fab fa-facebook-f"></i> Recommended on Facebook
+                    </div>
+                </div>
+
+                <!-- 20. Lee Ball (Facebook) -->
+                <div class="review-card-fb" data-category="driveway" data-source="facebook">
+                    <div class="review-card-fb-top">
+                        <div class="review-avatar-fb">L</div>
+                        <div class="review-meta-fb">
+                            <div class="review-name-fb">Lee Ball</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-recommend-fb">
+                                <i class="fas fa-thumbs-up"></i> Recommends All Saints Jet Washing
+                            </div><span class="verified-badge" style="color: #1877f2; background: rgba(24, 119, 242, 0.08);"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-fb">Facebook Recommendation</div>
+                        </div>
+                        <div class="facebook-f-badge">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                    <p class="review-body-fb">Highly recommend All Saints Jet Washing very prompt and did a fantastic job patio looks brand new again and Ash left the space spotless</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span></div>
+                    <div class="review-footer-fb">
+                        <i class="fab fa-facebook-f"></i> Recommended on Facebook
+                    </div>
+                </div>
+
+                <!-- 21. Michael O'Connor (Facebook) -->
+                <div class="review-card-fb" data-category="driveway windows gutters" data-source="facebook">
+                    <div class="review-card-fb-top">
+                        <div class="review-avatar-fb">M</div>
+                        <div class="review-meta-fb">
+                            <div class="review-name-fb">Michael O'Connor</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-recommend-fb">
+                                <i class="fas fa-thumbs-up"></i> Recommends All Saints Jet Washing
+                            </div><span class="verified-badge" style="color: #1877f2; background: rgba(24, 119, 242, 0.08);"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-fb">Facebook Recommendation</div>
+                        </div>
+                        <div class="facebook-f-badge">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                    <p class="review-body-fb">Great job by Ashley and Team. Having had a few issues with the last company that cleaned my drive, this was a pleasant experience. Great communication, excellent work and trustworthy (the drive looks like new). Came back the next day to do the sanding. Booked into clean the windows and gutters next. 10/10. 👍</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span><span class="service-tag">Window Cleaning</span><span class="service-tag">Gutter Cleaning</span></div>
+                    <div class="review-footer-fb">
+                        <i class="fab fa-facebook-f"></i> Recommended on Facebook
+                    </div>
+                </div>
+
+                <!-- 22. Tracey Brant (Facebook) -->
+                <div class="review-card-fb" data-category="driveway windows" data-source="facebook">
+                    <div class="review-card-fb-top">
+                        <div class="review-avatar-fb">T</div>
+                        <div class="review-meta-fb">
+                            <div class="review-name-fb">Tracey Brant</div>
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><div class="review-recommend-fb">
+                                <i class="fas fa-thumbs-up"></i> Recommends All Saints Jet Washing
+                            </div><span class="verified-badge" style="color: #1877f2; background: rgba(24, 119, 242, 0.08);"><i class="fa-solid fa-circle-check"></i> Verified</span></div>
+                            <div class="review-date-fb">Facebook Recommendation</div>
+                        </div>
+                        <div class="facebook-f-badge">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                    <p class="review-body-fb">What an absolutely fabulous job if my front drive . So meticulous and the attention to detail is great. Left it looking amazing . They cleaned all the windows and garage door after and re sanded. It looks like a new driveway. Would highly recommend. Thank you</p>
+                    <div class="review-tags-container"><span class="service-tag">Driveway & Patio</span><span class="service-tag">Window Cleaning</span></div>
+                    <div class="review-footer-fb">
+                        <i class="fab fa-facebook-f"></i> Recommended on Facebook
+                    </div>
+                </div>
+
+            </div><!-- /.reviews-masonry -->
+        </div><!-- /.reviews-section -->
+
+        <!-- ── CTA ───────────────────────────────────────────────── -->
+        <div class="reviews-cta-block">
+            <p>Happy with our work? We'd love to hear from you.</p>
+            <a href="https://g.page/r/Cdw078w7qHbsEBM/review" target="_blank" rel="noopener" class="cta-button">Leave a Google Review</a>
+        </div>
+
     </main>
+
     <footer>
         <p>&copy; 2026 All Saints Jet Washing</p>
     </footer>
+
     <script>
         const hamburger = document.querySelector('.hamburger');
         const nav = document.querySelector('.mobile-nav');
-
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             nav.classList.toggle('active');
@@ -346,6 +915,100 @@
             hamburger.setAttribute('aria-expanded', !expanded);
         });
     </script>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        (function() {
+            var btn = document.getElementById('scroll-top-btn');
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+
+    <!-- Topic Filtering Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const reviewCards = document.querySelectorAll('.review-card-g, .review-card-fb');
+            const countStatus = document.getElementById('reviews-count-status');
+            
+            function updateCounter(filterValue) {
+                let googleVisible = 0;
+                let facebookVisible = 0;
+                
+                reviewCards.forEach(card => {
+                    const categories = card.getAttribute('data-category').split(' ');
+                    const isVisible = filterValue === 'all' || categories.includes(filterValue);
+                    
+                    if (isVisible) {
+                        if (card.classList.contains('review-card-g')) {
+                            googleVisible++;
+                        } else if (card.classList.contains('review-card-fb')) {
+                            facebookVisible++;
+                        }
+                    }
+                });
+                
+                const totalVisible = googleVisible + facebookVisible;
+                
+                let filterLabel = "reviews";
+                if (filterValue === 'driveway') filterLabel = "Driveway & Patio reviews";
+                else if (filterValue === 'windows') filterLabel = "Window Cleaning reviews";
+                else if (filterValue === 'gutters') filterLabel = "Gutter Cleaning reviews";
+                else if (filterValue === 'fascia') filterLabel = "Fascia & PVC reviews";
+                
+                if (filterValue === 'all') {
+                    countStatus.textContent = `Showing all ${googleVisible} Google reviews & ${facebookVisible} Facebook recommendations`;
+                } else {
+                    countStatus.textContent = `Showing ${totalVisible} ${filterLabel} (${googleVisible} Google, ${facebookVisible} Facebook)`;
+                }
+            }
+            
+            // Initialize count on page load
+            updateCounter('all');
+            
+            // Initialize entrance animations on page load
+            reviewCards.forEach(card => {
+                card.classList.add('review-card-animate');
+            });
+            
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button styling
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    const filterValue = btn.getAttribute('data-filter');
+                    
+                    // Show or hide matching cards
+                    reviewCards.forEach(card => {
+                        const categories = card.getAttribute('data-category').split(' ');
+                        const matchesFilter = filterValue === 'all' || categories.includes(filterValue);
+                        
+                        card.classList.remove('review-card-animate');
+                        
+                        if (matchesFilter) {
+                            card.classList.remove('review-card-hidden');
+                            // Trigger reflow to restart CSS animation
+                            void card.offsetWidth;
+                            card.classList.add('review-card-animate');
+                        } else {
+                            card.classList.add('review-card-hidden');
+                        }
+                    });
+                    
+                    updateCounter(filterValue);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-

@@ -1221,6 +1221,20 @@ footer p { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em
   .services-grid-asymmetrical { grid-template-columns: repeat(2, 1fr); gap: 2.5rem; }
   .reviews-grid { grid-template-columns: repeat(2, 1fr); }
   .service-page { padding: 3.5rem 3rem; }
+
+  #about-editorial {
+    padding: 3.5rem 0;
+    margin-bottom: 4rem;
+  }
+  #services-block {
+    margin-bottom: 4.5rem;
+  }
+  .reviews-page {
+    padding-top: 3.5rem;
+  }
+  .reviews-page > p {
+    margin-bottom: 2.5rem;
+  }
 }
 
 /* ── Mobile ≤ 768px ────────────────────────────────────────── */
@@ -1251,6 +1265,20 @@ footer p { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em
   .trusted-badge-card { left: 0; top: 11%; }
 
   .contact-details { grid-template-columns: 1fr; }
+
+  #about-editorial {
+    padding: 3rem 0;
+    margin-bottom: 3.5rem;
+  }
+  #services-block {
+    margin-bottom: 3.5rem;
+  }
+  .reviews-page {
+    padding-top: 3rem;
+  }
+  .reviews-page > p {
+    margin-bottom: 2rem;
+  }
 }
 
 /* ── Small mobile ≤ 580px ──────────────────────────────────── */
@@ -1303,7 +1331,7 @@ footer p { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em
   .btn-transparent-spark { width: 100%; justify-content: center; }
 
   .services-grid-asymmetrical { grid-template-columns: 1fr; gap: 2.25rem; }
-  .reviews-grid               { grid-template-columns: 1fr; }
+  .reviews-grid               { grid-template-columns: 1fr; margin-bottom: 2rem; }
 
   .before-after-container { grid-template-columns: 1fr; gap: 1.75rem; }
   .before-after-item img  { height: 210px; }
@@ -1320,4 +1348,76 @@ footer p { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.13em
 
   .close { top: 18px; right: 18px; font-size: 1.65rem; }
   .prev, .next { font-size: 1.65rem; padding: 16px 12px; }
+
+  #about-editorial {
+    padding: 2rem 0;
+    margin-bottom: 2.5rem;
+  }
+  #services-block {
+    margin-bottom: 2.5rem;
+  }
+  .reviews-page {
+    padding-top: 2.5rem;
+  }
+  .reviews-page > p {
+    margin-bottom: 2rem;
+  }
 }
+
+/* ================================================================
+   SCROLL-TO-TOP BUTTON
+   Fixed floating arrow — bottom-right, mobile-first
+   ================================================================ */
+#scroll-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 22px;
+  z-index: 1500;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  box-shadow: 0 6px 24px rgba(15, 108, 174, 0.38);
+
+  /* Hidden by default — JS adds .visible */
+  opacity: 0;
+  transform: translateY(16px) scale(0.88);
+  pointer-events: none;
+  transition:
+    opacity      0.32s var(--ease),
+    transform    0.32s var(--ease-ex),
+    background   var(--t-mid) var(--ease),
+    box-shadow   var(--t-mid) var(--ease);
+}
+
+#scroll-top-btn.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+#scroll-top-btn:hover {
+  background: var(--gold-dk);
+  box-shadow: 0 10px 32px rgba(15, 108, 174, 0.52);
+  transform: translateY(-3px) scale(1.07);
+}
+
+#scroll-top-btn:active {
+  transform: translateY(0) scale(0.96);
+}
+
+/* Subtle bounce on the arrow icon */
+#scroll-top-btn i {
+  transition: transform 0.22s var(--ease-ex);
+}
+#scroll-top-btn:hover i {
+  transform: translateY(-2px);
+}
+

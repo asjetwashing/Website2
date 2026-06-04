@@ -251,6 +251,12 @@
             .contact-footer { gap: 1.75rem; }
             .contact-areas { padding: 2rem 1.75rem; }
         }
+
+        @media (max-width: 580px) {
+            .contact-intro { padding: 2.5rem 0 1.5rem; }
+            .contact-container { padding-bottom: 2rem; }
+            .contact-areas { padding: 1.5rem 1.25rem; }
+        }
     </style>
 </head>
 <body>
@@ -269,6 +275,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
@@ -280,6 +287,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
@@ -363,6 +371,24 @@
         });
     </script>
 
+
+    <!-- Scroll to top button -->
+    <button id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        /* ── Scroll-to-top ──────────────────────────────────────── */
+        (function() {
+            var btn = document.getElementById('scroll-top-btn');
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
 </body>
 </html>
 

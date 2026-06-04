@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="canonical" href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before &amp; After Gallery | All Saints Jet Washing Bromsgrove</title>
+    <meta name="description" content="See our professional jet washing transformations in Bromsgrove. Drag to compare real before and after results of driveways, patios, and paths.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">
+    <meta property="og:title" content="Before &amp; After Gallery | All Saints Jet Washing Bromsgrove">
+    <meta property="og:description" content="Interactive before and after gallery showing real driveway, patio, and path cleaning transformations in Bromsgrove. Drag to compare!">
+    <meta property="og:image" content="https://allsaintsjetwashing.co.uk/assets/jetwash-after-1.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">
+    <meta property="twitter:title" content="Before &amp; After Gallery | All Saints Jet Washing Bromsgrove">
+    <meta property="twitter:description" content="Interactive before and after gallery showing real driveway, patio, and path cleaning transformations in Bromsgrove. Drag to compare!">
+    <meta property="twitter:image" content="https://allsaintsjetwashing.co.uk/assets/jetwash-after-1.webp">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ============================================================
+           GALLERY PAGE — Draggable Before/After & Premium Layout
+           ============================================================ */
+
+        /* ── Hero ──────────────────────────────────────────────────── */
+        .svc-hero {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .svc-hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 45%;
+            display: block;
+        }
+
+        .svc-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(to right, rgba(5,31,53,0.88) 0%, rgba(5,31,53,0.52) 42%, rgba(5,31,53,0.10) 72%, transparent 100%),
+                linear-gradient(to top,   rgba(5,31,53,0.65) 0%, transparent 55%);
+            pointer-events: none;
+        }
+
+        .svc-hero-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 3.5rem 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .svc-hero-eyebrow {
+            font-size: 0.67rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: rgba(255,255,255,0.65);
+            margin-bottom: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .svc-hero-eyebrow::before {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 1.5px;
+            background: var(--gold);
+            flex-shrink: 0;
+        }
+
+        .svc-hero h1 {
+            font-family: var(--f-serif);
+            font-size: clamp(2.2rem, 4.5vw, 3.75rem);
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.1;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+            max-width: 640px;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.25);
+        }
+
+        .svc-hero h1 em {
+            font-style: italic;
+            font-weight: 400;
+            color: rgba(255,255,255,0.82);
+        }
+
+        .svc-hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            background: var(--gold);
+            color: #fff;
+            padding: 0.9rem 1.9rem;
+            border-radius: var(--r-pill);
+            font-weight: 700;
+            font-size: 0.74rem;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            text-decoration: none;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.28);
+            transition: background var(--t-mid) var(--ease), transform var(--t-fast) var(--ease), box-shadow var(--t-mid) var(--ease);
+        }
+
+        .svc-hero-cta:hover { background: var(--gold-dk); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.35); }
+        .svc-hero-cta i { font-size: 0.85em; transition: transform var(--t-mid) var(--ease-ex); }
+        .svc-hero-cta:hover i { transform: translateX(4px); }
+
+        @media (max-width: 1100px) {
+            .svc-hero { height: 420px; }
+            .svc-hero-content { padding: 2.5rem 2rem; }
+        }
+
+        @media (max-width: 580px) {
+            .svc-hero { height: 320px; }
+            .svc-hero-content { padding: 2rem 1.25rem; }
+        }
+
+        /* ── Gallery Layout ────────────────────────────────────────── */
+        .gallery-container {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .gallery-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3.5rem;
+        }
+
+        .gallery-intro h2 {
+            font-family: var(--f-serif);
+            font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+            font-weight: 400;
+            color: var(--ink);
+            line-height: 1.25;
+            margin-bottom: 1.25rem;
+        }
+
+        .gallery-intro h2 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .gallery-intro p {
+            font-size: 1.02rem;
+            color: var(--ink-2);
+            line-height: 1.75;
+        }
+
+        /* ── Draggable Sliders Grid ────────────────────────────────── */
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            margin-bottom: 5.5rem;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            width: calc(33.333% - 1.67rem);
+            background: var(--bg-card);
+            border-radius: var(--r-lg);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: var(--sh-md);
+            transition: transform var(--t-mid) var(--ease), box-shadow var(--t-mid) var(--ease);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--sh-lg);
+        }
+
+        /* Draggable Slider Component */
+        .ba-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            user-select: none;
+            -webkit-user-select: none;
+            --clip-pos: 50%;
+        }
+
+        .ba-portrait {
+            aspect-ratio: 787 / 1400;
+        }
+
+        .ba-landscape {
+            aspect-ratio: 1400 / 788;
+        }
+
+        .ba-slider.dragging {
+            cursor: ew-resize;
+        }
+
+        .ba-slider img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+
+        .image-after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .image-before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            clip-path: inset(0 calc(100% - var(--clip-pos)) 0 0);
+            -webkit-clip-path: inset(0 calc(100% - var(--clip-pos)) 0 0);
+        }
+
+        .image-label {
+            position: absolute;
+            bottom: 1.25rem;
+            background: rgba(8, 35, 58, 0.82);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            color: #fff;
+            font-size: 0.6rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            padding: 0.35rem 0.75rem;
+            border-radius: var(--r-sm);
+            z-index: 5;
+            pointer-events: none;
+            box-shadow: var(--sh-sm);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .label-before {
+            left: 1.25rem;
+        }
+
+        .label-after {
+            right: 1.25rem;
+        }
+
+        .ba-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: var(--clip-pos);
+            width: 3px;
+            background: rgba(255,255,255,0.9);
+            z-index: 10;
+            cursor: ew-resize;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px rgba(8,35,58,0.3);
+            pointer-events: none; /* Handle moves with wrapper touch events */
+        }
+
+        .ba-handle-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #fff;
+            color: var(--gold);
+            border: 3.5px solid var(--gold);
+            box-shadow: var(--sh-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            transition: transform var(--t-fast) var(--ease), background var(--t-fast) var(--ease);
+            pointer-events: none;
+        }
+
+        .ba-slider:hover .ba-handle-button {
+            transform: translate(-50%, -50%) scale(1.08);
+            background: #fcfdfe;
+        }
+
+        /* Description card details below the slider */
+        .gallery-details {
+            padding: 1.6rem 2rem 1.8rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            flex-grow: 1;
+        }
+
+        .gallery-details h3 {
+            font-family: var(--f-serif);
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--ink);
+        }
+
+        .gallery-details p {
+            font-size: 0.88rem;
+            color: var(--ink-2);
+            line-height: 1.65;
+        }
+
+        /* ── Mobile & Desktop Layout Responsive adjustments ────────── */
+        @media (max-width: 990px) {
+            .gallery-grid {
+                gap: 2rem;
+            }
+            .gallery-item {
+                width: calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 680px) {
+            .gallery-grid {
+                gap: 1.5rem;
+                margin-bottom: 2.5rem;
+            }
+            .gallery-item {
+                width: 100%;
+            }
+            .gallery-container {
+                margin: 2rem auto;
+                padding: 0 1.25rem;
+            }
+            .gallery-intro {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* ── Reviews ───────────────────────────────────────────────── */
+        .reviews-section {
+            max-width: 600px;
+            margin: 0 auto 5.5rem;
+            padding: 0 1.25rem;
+        }
+
+        /* ── CTA strip ─────────────────────────────────────────────── */
+        .svc-cta-strip {
+            background: var(--ink);
+            border-radius: var(--r-lg);
+            padding: 4rem 4.5rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 2.5rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .svc-cta-strip h2 {
+            font-family: var(--f-serif);
+            font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+            font-weight: 400;
+            color: #fff;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .svc-cta-strip h2 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .svc-cta-strip p {
+            color: var(--ink-3);
+            font-size: 1rem;
+        }
+
+        .svc-cta-strip-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .svc-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            background: var(--gold);
+            color: #fff;
+            padding: 0.9rem 1.9rem;
+            border-radius: var(--r-pill);
+            font-weight: 700;
+            font-size: 0.74rem;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            text-decoration: none;
+            transition: background var(--t-mid) var(--ease), transform var(--t-fast) var(--ease);
+        }
+
+        .svc-btn-primary:hover {
+            background: var(--gold-dk);
+            transform: translateY(-2px);
+        }
+
+        .svc-btn-primary i {
+            font-size: 0.85em;
+            transition: transform var(--t-mid) var(--ease-ex);
+        }
+
+        .svc-btn-primary:hover i {
+            transform: translateX(4px);
+        }
+
+        .svc-btn-ghost {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.25);
+            padding: 0.8rem 1.9rem;
+            border-radius: var(--r-pill);
+            font-weight: 700;
+            font-size: 0.74rem;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            text-decoration: none;
+            transition: background var(--t-mid) var(--ease), border-color var(--t-mid) var(--ease), transform var(--t-fast) var(--ease);
+        }
+
+        .svc-btn-ghost:hover {
+            background: rgba(255,255,255,0.07);
+            border-color: #fff;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 900px) {
+            .svc-cta-strip {
+                grid-template-columns: 1fr;
+                padding: 3rem;
+                gap: 2rem;
+                text-align: center;
+            }
+            .svc-cta-strip-btns {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 580px) {
+            .reviews-section {
+                margin-bottom: 2.5rem;
+            }
+            .svc-cta-strip {
+                padding: 2.25rem 1.5rem;
+            }
+            .svc-cta-strip-btns {
+                flex-direction: column;
+                width: 100%;
+            }
+            .svc-btn-primary, .svc-btn-ghost {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="https://allsaintsjetwashing.co.uk/index.html">
+                <i class="fa-solid fa-fleur-de-lis" style="color: var(--gold); margin-right: 10px; font-size: 1.3rem;"></i>All Saints Jet Washing
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="https://allsaintsjetwashing.co.uk/index.html">Home</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/jet-washing-bromsgrove.html">Jet Washing</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="https://allsaintsjetwashing.co.uk/index.html">Home</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/jet-washing-bromsgrove.html">Jet Washing</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="svc-hero" aria-label="Before and After Gallery Hero">
+        <img
+            src="assets/exterior-cleaning-specialists-bromsgrove-hero.webp"
+            alt="All Saints Jet Washing work showcase hero banner"
+            class="svc-hero-img"
+            width="1200" height="500"
+            fetchpriority="high"
+        >
+        <div class="svc-hero-content">
+            <span class="svc-hero-eyebrow">Work Showcase</span>
+            <h1>Before &amp; After Gallery — <em>real results.</em></h1>
+            <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="svc-hero-cta">
+                Get Your Free Quote <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <main class="gallery-container">
+
+        <!-- Intro -->
+        <div class="gallery-intro">
+            <h2>See the <em>All Saints</em> difference</h2>
+            <p>Drag the slider handles left and right to inspect the stunning difference our professional jet washing equipment makes. We restore tired, weathered surfaces to their original, pristine condition.</p>
+        </div>
+
+        <!-- Draggable Sliders Grid -->
+        <div class="gallery-grid">
+            
+            <!-- Slider 1 (Featured Project - Landscape) -->
+            <div class="gallery-item featured-card" style="width: 100%; max-width: 960px;">
+                <div class="ba-slider ba-landscape" aria-label="Before and After entryway patio cleaning slider">
+                    <div class="image-after">
+                        <img src="assets/jetwash-after-4.webp" alt="Clean block paved entryway patio after jet washing">
+                        <span class="image-label label-after">After</span>
+                    </div>
+                    <div class="image-before">
+                        <img src="assets/jetwash-before-4.webp" alt="Dirty block paved entryway patio before jet washing">
+                        <span class="image-label label-before">Before</span>
+                    </div>
+                    <div class="ba-handle">
+                        <div class="ba-handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-details" style="padding: 1.8rem 2.25rem 2rem; text-align: center;">
+                    <div style="margin-bottom: 0.75rem;">
+                        <span style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); background: var(--gold-glow); padding: 0.25rem 0.65rem; border-radius: var(--r-sm); display: inline-block;">Featured Project</span>
+                    </div>
+                    <h3 style="font-family: var(--f-serif); font-size: 1.4rem; font-weight: 500; color: var(--ink); margin-bottom: 0.5rem;">Entryway Patio Restoration</h3>
+                    <p style="font-size: 0.95rem; color: var(--ink-2); line-height: 1.75; margin: 0 auto; max-width: 760px;">A widescreen view of a block-paved entryway patio deep clean. Years of embedded black dirt, organic build-up, and standing water were cleared away, restoring the rich color of the bricks and dramatically improving the home's curb appeal.</p>
+                </div>
+            </div>
+            
+            <!-- Slider 1 -->
+            <div class="gallery-item">
+                <div class="ba-slider ba-portrait" aria-label="Before and After patio path cleaning slider 3">
+                    <div class="image-after">
+                        <img src="assets/jetwash-after-3.webp" alt="Clean path and brickwork after jet washing">
+                        <span class="image-label label-after">After</span>
+                    </div>
+                    <div class="image-before">
+                        <img src="assets/jetwash-before-3.webp" alt="Dirty, stained path and brickwork before jet washing">
+                        <span class="image-label label-before">Before</span>
+                    </div>
+                    <div class="ba-handle">
+                        <div class="ba-handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-details">
+                    <h3>Weed &amp; Moss Path Clearing</h3>
+                    <p>Curved block paved walkway heavily overgrown with weeds, grass, and joint moss, restored to a clean, weed-free finish.</p>
+                </div>
+            </div>
+
+            <!-- Slider 2 -->
+            <div class="gallery-item">
+                <div class="ba-slider ba-portrait" aria-label="Before and After side alley moss removal slider 6">
+                    <div class="image-after">
+                        <img src="assets/jetwash-after-6.webp" alt="Clean block paved side alley path after moss removal">
+                        <span class="image-label label-after">After</span>
+                    </div>
+                    <div class="image-before">
+                        <img src="assets/jetwash-before-6.webp" alt="Moss and weed overgrown side alley path before cleaning">
+                        <span class="image-label label-before">Before</span>
+                    </div>
+                    <div class="ba-handle">
+                        <div class="ba-handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-details">
+                    <h3>Side Alley Moss Removal</h3>
+                    <p>Tackled heavy moss growth and weeds between paving joints in a side alleyway, leaving a clean, weed-free path.</p>
+                </div>
+            </div>
+
+            <!-- Slider 3 -->
+            <div class="gallery-item">
+                <div class="ba-slider ba-portrait" aria-label="Before and After front path lichen treatment slider 5">
+                    <div class="image-after">
+                        <img src="assets/jetwash-after-5.webp" alt="Clean block paved front path after lichen treatment">
+                        <span class="image-label label-after">After</span>
+                    </div>
+                    <div class="image-before">
+                        <img src="assets/jetwash-before-5.webp" alt="Lichen spotted block paved front path before treatment">
+                        <span class="image-label label-before">Before</span>
+                    </div>
+                    <div class="ba-handle">
+                        <div class="ba-handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-details">
+                    <h3>Lichen Spot Treatment</h3>
+                    <p>Curved block paved front entrance pathway covered in stubborn white lichen spotting, treated and restored to a pristine finish.</p>
+                </div>
+            </div>
+
+            <!-- Slider 4 -->
+            <div class="gallery-item">
+                <div class="ba-slider ba-portrait" aria-label="Before and After driveway cleaning slider 1">
+                    <div class="image-after">
+                        <img src="assets/jetwash-after-1.webp" alt="Clean block paved driveway after jet washing">
+                        <span class="image-label label-after">After</span>
+                    </div>
+                    <div class="image-before">
+                        <img src="assets/jetwash-before-1.webp" alt="Dirty block paved driveway before jet washing">
+                        <span class="image-label label-before">Before</span>
+                    </div>
+                    <div class="ba-handle">
+                        <div class="ba-handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-details">
+                    <h3>Block Paved Driveway</h3>
+                    <p>Deep cleaning to remove years of dark grime, atmospheric dirt, and surface weathering, restoring the rich color of the bricks.</p>
+                </div>
+            </div>
+
+            <!-- Slider 5 -->
+            <div class="gallery-item">
+                <div class="ba-slider ba-portrait" aria-label="Before and After driveway cleaning slider 2">
+                    <div class="image-after">
+                        <img src="assets/jetwash-after-2.webp" alt="Clean block paved driveway after cleaning and re-sanding">
+                        <span class="image-label label-after">After</span>
+                    </div>
+                    <div class="image-before">
+                        <img src="assets/jetwash-before-2.webp" alt="Dirty, moss-covered block paved driveway before cleaning">
+                        <span class="image-label label-before">Before</span>
+                    </div>
+                    <div class="ba-handle">
+                        <div class="ba-handle-button">
+                            <i class="fa-solid fa-arrows-left-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-details">
+                    <h3>Driveway Moss &amp; Dirt Removal</h3>
+                    <p>Complete removal of joint moss and surface grime from this block paved driveway, finished with a fresh layer of kiln-dried jointing sand.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Google Review Section -->
+        <div class="reviews-section">
+            <div style="background:#fff;border-radius:12px;padding:1.75rem;border:1px solid rgba(8,35,58,0.09);border-top:3px solid rgba(66,133,244,0.35);box-shadow:0 4px 16px rgba(8,35,58,0.05);display:flex;flex-direction:column;gap:1rem;transition:box-shadow 0.25s,transform 0.25s" onmouseover="this.style.boxShadow='0 8px 32px rgba(8,35,58,0.08)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 4px 16px rgba(8,35,58,0.05)';this.style.transform='translateY(0)'">
+                <div style="display:flex;align-items:flex-start;gap:0.85rem">
+                    <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dk) 100%);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;color:#fff;text-transform:uppercase">M</div>
+                    <div style="flex:1;min-width:0">
+                        <div style="font-weight:700;font-size:1rem;color:var(--ink);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Mark McCarron</div>
+                        <span style="display:flex;gap:2px;color:#fbbc04;font-size:0.7rem;margin-top:3px"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                    <div style="flex-shrink:0;margin-top:2px"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Google review" style="flex-shrink:0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div>
+                </div>
+                <p style="font-size:1.05rem;line-height:1.6;font-style:italic;color:var(--ink-2);margin:0">&ldquo;Massive improvement to our drive. Removed all weeds, moss, dirt to the drive, door steps, edging brickwork &amp; re-sanding. I would highly recommend using All Saints Jet Washing. Very professional &amp; would definitely use again.&rdquo;</p>
+                <div style="display:flex;align-items:center;gap:5px;padding-top:0.7rem;border-top:1px solid rgba(8,35,58,0.08);font-size:0.68rem;font-weight:600;color:var(--ink-3)"><svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Posted on Google</div>
+            </div>
+        </div>
+
+        <!-- CTA Strip -->
+        <div class="svc-cta-strip">
+            <div>
+                <h2>Ready for a <em>deep clean?</em></h2>
+                <p>Get in touch for a free, no-obligation quote. We serve Bromsgrove and all surrounding areas.</p>
+            </div>
+            <div class="svc-cta-strip-btns">
+                <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="svc-btn-primary">
+                    Get a Free Quote <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="https://wa.me/447940188231" target="_blank" rel="noopener" class="svc-btn-ghost">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All Saints Jet Washing</p>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        /* ── Hamburger ─────────────────────────────────────────────── */
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
+        });
+
+        /* ── Scroll-to-top ──────────────────────────────────────── */
+        (function() {
+            var btn = document.getElementById('scroll-top-btn');
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+
+        /* ── Draggable Before/After Sliders ────────────────────────── */
+        document.querySelectorAll('.ba-slider').forEach(slider => {
+            let active = false;
+
+            const setPosition = (x) => {
+                const rect = slider.getBoundingClientRect();
+                let percentage = ((x - rect.left) / rect.width) * 100;
+                if (percentage < 0) percentage = 0;
+                if (percentage > 100) percentage = 100;
+                slider.style.setProperty('--clip-pos', `${percentage}%`);
+            };
+
+            const startDrag = (e) => {
+                active = true;
+                const x = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+                setPosition(x);
+                slider.classList.add('dragging');
+            };
+
+            const drag = (e) => {
+                if (!active) return;
+                // Prevent vertical scroll on mobile while dragging horizontally
+                if (e.type.includes('touch')) {
+                    e.preventDefault();
+                }
+                const x = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+                setPosition(x);
+            };
+
+            const stopDrag = () => {
+                active = false;
+                slider.classList.remove('dragging');
+            };
+
+            // Touch events for mobile
+            slider.addEventListener('touchstart', startDrag, { passive: true });
+            window.addEventListener('touchmove', drag, { passive: false });
+            window.addEventListener('touchend', stopDrag);
+
+            // Mouse events for desktop
+            slider.addEventListener('mousedown', startDrag);
+            window.addEventListener('mousemove', drag);
+            window.addEventListener('mouseup', stopDrag);
+        });
+    </script>
+</body>
+</html>

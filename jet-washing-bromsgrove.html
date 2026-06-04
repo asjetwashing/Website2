@@ -140,7 +140,7 @@
             border: 1px solid var(--border);
             border-radius: var(--r-lg);
             overflow: hidden;
-            margin: 4rem 0 5rem;
+            margin: 3rem 0 4rem;
         }
 
         .svc-feature-item {
@@ -174,9 +174,9 @@
         .svc-content-wrap {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5rem;
+            gap: 4rem;
             align-items: start;
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
         }
 
         .svc-text-col h2 {
@@ -357,13 +357,14 @@
 
         /* ── Gallery ───────────────────────────────────────────────── */
         .svc-gallery-section {
-            margin-bottom: 5.5rem;
+            margin-bottom: 4rem;
             max-width: none !important;
+            padding-top: 0 !important;
         }
 
         .svc-gallery-header {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
         .svc-gallery-eyebrow {
@@ -674,26 +675,27 @@
         @media (max-width: 580px) {
             .svc-hero { height: 320px; }
             .svc-hero-content { padding: 2rem 1.25rem; }
-            .svc-features { grid-template-columns: 1fr; border-radius: var(--r-md); }
-            .svc-feature-item { padding: 1.75rem 1.5rem; }
-            .svc-content-wrap { margin-bottom: 4rem; }
-            .svc-img-main { height: 270px; }
+            .svc-features { grid-template-columns: 1fr; border-radius: var(--r-md); margin: 1.5rem 0 2.5rem; }
+            .svc-feature-item { padding: 1.5rem 1.25rem; }
+            .svc-content-wrap { margin-bottom: 2.5rem; }
+            .svc-img-main { height: 240px; }
             .svc-img-badge { left: 0; bottom: -1rem; }
-            .svc-chemical { padding: 3.5rem 0; margin-bottom: 4rem; }
-            .svc-chemical-photo { height: 240px; }
+            .svc-chemical { padding: 2.5rem 0; margin-bottom: 2.5rem; }
+            .svc-chemical-photo { height: 220px; }
             /* Stack gallery to single column on phones */
             .svc-gallery-grid {
                 grid-template-columns: 1fr;
-                grid-template-rows: 240px 240px 240px;
+                grid-template-rows: 220px 220px 220px;
             }
             .svc-gallery-card:first-child { grid-row: auto; }
-            .svc-gallery-section { margin-bottom: 4rem; }
+            .svc-gallery-section { margin-bottom: 2.5rem; }
+            .svc-gallery-header { margin-bottom: 1.25rem; }
             .svc-before-after-section {
-                margin-top: -0.75rem;
-                margin-bottom: 4rem;
+                margin-top: 0;
+                margin-bottom: 2.5rem;
             }
             .svc-before-after-section .svc-gallery-header {
-                margin-bottom: 1.75rem;
+                margin-bottom: 1.25rem;
             }
             .svc-before-after-grid {
                 gap: 1.1rem;
@@ -729,6 +731,81 @@
             .svc-cta-strip { padding: 2.5rem 1.75rem; }
             .svc-cta-strip-btns { flex-direction: column; }
         }
+
+        /* ── Re-sanding section ─────────────────────────────────────── */
+        .svc-resand {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 5rem 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 5.5rem;
+        }
+        .svc-resand-photo {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--r-lg);
+            box-shadow: var(--sh-xl);
+            border: 3px solid rgba(255,255,255,0.8);
+            display: block;
+        }
+        .svc-resand-text h2 {
+            font-family: var(--f-serif);
+            font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+            font-weight: 400;
+            color: var(--ink);
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        .svc-resand-text h2 em { font-style: italic; color: var(--gold); }
+        .svc-resand-text p {
+            font-size: 1rem;
+            color: var(--ink-2);
+            line-height: 1.85;
+            margin-bottom: 1.25rem;
+        }
+        .svc-resand-steps {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+        .svc-resand-steps li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.85rem;
+            font-size: 0.95rem;
+            color: var(--ink-2);
+            line-height: 1.5;
+        }
+        .svc-resand-step-num {
+            width: 26px;
+            height: 26px;
+            min-width: 26px;
+            border-radius: 50%;
+            background: var(--gold-glow);
+            border: 1.5px solid rgba(15,108,174,0.25);
+            color: var(--gold);
+            font-size: 0.72rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+        }
+        @media (max-width: 1100px) {
+            .svc-resand { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 0; }
+            .svc-resand-photo { height: 300px; }
+        }
+        @media (max-width: 580px) {
+            .svc-resand { padding: 3.5rem 0; margin-bottom: 4rem; }
+            .svc-resand-photo { height: 240px; }
+        }
     </style>
 </head>
 <body>
@@ -747,6 +824,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
@@ -758,6 +836,7 @@
                 <li><a href="https://allsaintsjetwashing.co.uk/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/reviews-bromsgrove.html">Reviews</a></li>
                 <li><a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
             </ul>
@@ -767,15 +846,15 @@
     <!-- Hero: direct body flex sibling → naturally 100vw -->
     <section class="svc-hero" id="jet-washing-info" aria-label="Jet Washing Hero">
         <img
-            src="assets/professional-jet-washing-bromsgrove.webp"
-            alt="Professional jet washing of a driveway in Bromsgrove — high-pressure cleaning removing dirt and grime"
+            src="assets/driveway-jetwash-result-bromsgrove.webp"
+            alt="Wide view of a freshly jet washed driveway in Bromsgrove with the All Saints van in shot"
             class="svc-hero-img"
             width="1200" height="500"
             fetchpriority="high"
         >
         <div class="svc-hero-content">
             <span class="svc-hero-eyebrow">Bromsgrove &amp; Surrounding Areas</span>
-            <h1>Jet Washing Services<br>in Bromsgrove, <em>Built to Impress.</em></h1>
+            <h1>Professional Jet Washing<br>in Bromsgrove — <em>results you can see.</em></h1>
             <a href="https://allsaintsjetwashing.co.uk/contact-us-bromsgrove.html" class="svc-hero-cta">
                 Get a Free Quote <i class="fa-solid fa-arrow-right"></i>
             </a>
@@ -833,8 +912,8 @@
 
             <div class="svc-img-col">
                 <img
-                    src="assets/driveway-cleaning-bromsgrove-1.webp"
-                    alt="A clean block-paved driveway after professional jet washing in Bromsgrove"
+                    src="assets/driveway-jetwash-after-bromsgrove.webp"
+                    alt="A beautifully clean block-paved driveway after professional jet washing in Bromsgrove"
                     class="svc-img-main"
                     width="600" height="480"
                     loading="lazy"
@@ -864,51 +943,15 @@
                 </div>
             </div>
             <img
-                src="assets/front-driveway-clean-finished-bromsgrove.webp"
-                alt="Clean front driveway after professional jet washing in Bromsgrove"
+                src="assets/chemical-treatment-bromsgrove.webp"
+                alt="Curved sandstone patio during a professional chemical cleaning treatment showing soap foam being brushed on the surface"
                 class="svc-chemical-photo"
                 width="600" height="400"
                 loading="lazy"
             >
         </div>
 
-        <!-- ── Gallery ─────────────────────────────────────────────────── -->
-        <section class="svc-gallery-section">
-            <div class="svc-gallery-header">
-                <span class="svc-gallery-eyebrow">Our Work</span>
-                <h2>Gallery</h2>
-            </div>
-            <div class="svc-gallery-grid">
-                <div class="svc-gallery-card gallery-image" data-src="assets/driveway-cleaning-bromsgrove-1.webp">
-                    <img
-                        src="assets/driveway-cleaning-bromsgrove-1.webp"
-                        alt="A clean block-paved driveway after professional jet washing"
-                        width="600" height="560"
-                        loading="lazy"
-                    >
-                    <span class="svc-gallery-label">Driveway Cleaning</span>
-                </div>
-                <div class="svc-gallery-card gallery-image" data-src="assets/patio-after-cleaning-bromsgrove.webp">
-                    <img
-                        src="assets/patio-after-cleaning-bromsgrove.webp"
-                        alt="Freshly cleaned patio slabs after professional jet washing in Bromsgrove"
-                        width="600" height="280"
-                        loading="lazy"
-                    >
-                    <span class="svc-gallery-label">Patio Cleaning</span>
-                </div>
-                <div class="svc-gallery-card gallery-image" data-src="assets/path-cleaning-finished-gallery-bromsgrove.webp">
-                    <img
-                        src="assets/path-cleaning-finished-gallery-bromsgrove.webp"
-                        alt="Freshly cleaned garden path after jet washing in Bromsgrove"
-                        width="600" height="280"
-                        loading="lazy"
-                    >
-                    <span class="svc-gallery-label">Path Cleaning</span>
-                </div>
-            </div>
-        </section>
-
+        <!-- ── Before & After ─────────────────────────────────────────── -->
         <section class="svc-before-after-section">
             <div class="svc-gallery-header">
                 <span class="svc-gallery-eyebrow">Real Results</span>
@@ -949,19 +992,103 @@
                     </div>
                 </article>
             </div>
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html" class="svc-hero-cta">
+                    See More Transformations <i class="fa-solid fa-images"></i>
+                </a>
+            </div>
         </section>
 
-        <!-- ── Pull Quote ──────────────────────────────────────────────── -->
-        <div class="svc-quote">
-            <div class="svc-quote-mark" aria-hidden="true">&ldquo;</div>
-            <div class="svc-quote-body">
-                <blockquote>Ashley jet washed our driveway and patio — absolutely transformed. He arrived on time, worked efficiently and left everything spotless. The difference is incredible. Will definitely be booking again and would highly recommend to anyone in the area.</blockquote>
-                <div class="svc-quote-attr">
-                    <div class="svc-quote-stars">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <span class="svc-quote-name">Local Customer — Google Review</span>
+        <!-- ── Re-sanding Section ──────────────────────────────────────── -->
+        <div class="svc-resand">
+            <img
+                src="assets/driveway-jetwash-sanding-bromsgrove.webp"
+                alt="Kiln-dried sand being brushed into block paving joints after jet washing in Bromsgrove"
+                class="svc-resand-photo"
+                width="700" height="400"
+                loading="lazy"
+            >
+            <div class="svc-resand-text">
+                <h2>Re-sanding — <em>the finishing step</em></h2>
+                <p>After a thorough jet wash, the high-pressure water naturally removes the jointing sand from between your block paving. This is completely normal — and it's our job to put it back properly.</p>
+                <p>We finish every block paving job by brushing kiln-dried sand back into the joints. This step is essential: without it, your blocks can shift, weeds take hold faster, and the surface loses its structural integrity over time.</p>
+                <ul class="svc-resand-steps">
+                    <li>
+                        <span class="svc-resand-step-num">1</span>
+                        <span>Jet wash removes old jointing sand along with dirt, moss and algae</span>
+                    </li>
+                    <li>
+                        <span class="svc-resand-step-num">2</span>
+                        <span>Kiln-dried sand is spread evenly across the clean, dry surface</span>
+                    </li>
+                    <li>
+                        <span class="svc-resand-step-num">3</span>
+                        <span>Sand is brushed into the joints and compacted for a firm, weed-resistant finish</span>
+                    </li>
+                    <li>
+                        <span class="svc-resand-step-num">4</span>
+                        <span>Any excess is swept away — leaving a clean, professionally finished driveway</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ── Gallery ─────────────────────────────────────────────────── -->
+        <section class="svc-gallery-section">
+            <div class="svc-gallery-header">
+                <span class="svc-gallery-eyebrow">Our Work</span>
+                <h2>Gallery</h2>
+            </div>
+            <div class="svc-gallery-grid">
+                <div class="svc-gallery-card gallery-image" data-src="assets/driveway-jetwash-inprogress-bromsgrove.webp">
+                    <img
+                        src="assets/driveway-jetwash-inprogress-bromsgrove.webp"
+                        alt="Jet washing equipment set up on a driveway mid-job in Bromsgrove"
+                        width="600" height="560"
+                        loading="lazy"
+                    >
+                    <span class="svc-gallery-label">In Progress</span>
                 </div>
+                <div class="svc-gallery-card gallery-image" data-src="assets/patio-after-cleaning-bromsgrove.webp">
+                    <img
+                        src="assets/patio-after-cleaning-bromsgrove.webp"
+                        alt="Freshly cleaned patio slabs after professional jet washing in Bromsgrove"
+                        width="600" height="280"
+                        loading="lazy"
+                    >
+                    <span class="svc-gallery-label">Patio Cleaning</span>
+                </div>
+                <div class="svc-gallery-card gallery-image" data-src="assets/path-cleaning-finished-gallery-bromsgrove.webp">
+                    <img
+                        src="assets/path-cleaning-finished-gallery-bromsgrove.webp"
+                        alt="Freshly cleaned garden path after jet washing in Bromsgrove"
+                        width="600" height="280"
+                        loading="lazy"
+                    >
+                    <span class="svc-gallery-label">Path Cleaning</span>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <a href="https://allsaintsjetwashing.co.uk/gallery-bromsgrove.html" class="svc-hero-cta">
+                    View Full Gallery <i class="fa-solid fa-images"></i>
+                </a>
+            </div>
+        </section>
+
+
+        <!-- ── Pull Quote ──────────────────────────────────────────────── -->
+        <div style="max-width: 600px; margin: 0 auto 5.5rem;">
+            <div style="background:#fff;border-radius:12px;padding:1.75rem;border:1px solid rgba(8,35,58,0.09);border-top:3px solid rgba(66,133,244,0.35);box-shadow:0 4px 16px rgba(8,35,58,0.05);display:flex;flex-direction:column;gap:1rem;transition:box-shadow 0.25s,transform 0.25s" onmouseover="this.style.boxShadow='0 8px 32px rgba(8,35,58,0.08)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='0 4px 16px rgba(8,35,58,0.05)';this.style.transform='translateY(0)'">
+                <div style="display:flex;align-items:flex-start;gap:0.85rem">
+                    <div style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-dk) 100%);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;color:#fff;text-transform:uppercase">L</div>
+                    <div style="flex:1;min-width:0">
+                        <div style="font-weight:700;font-size:1rem;color:var(--ink);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Local Customer</div>
+                        <span style="display:flex;gap:2px;color:#fbbc04;font-size:0.7rem;margin-top:3px"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                    <div style="flex-shrink:0;margin-top:2px"><svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Google review" style="flex-shrink:0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg></div>
+                </div>
+                <p style="font-size:1.05rem;line-height:1.6;font-style:italic;color:var(--ink-2);margin:0">&ldquo;Ashley jet washed our driveway and patio — absolutely transformed. He arrived on time, worked efficiently and left everything spotless. The difference is incredible. Will definitely be booking again and would highly recommend to anyone in the area.&rdquo;</p>
+                <div style="display:flex;align-items:center;gap:5px;padding-top:0.7rem;border-top:1px solid rgba(8,35,58,0.08);font-size:0.68rem;font-weight:600;color:var(--ink-3)"><svg width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Posted on Google</div>
             </div>
         </div>
 
@@ -994,6 +1121,11 @@
         <a class="prev">&#10094;</a>
         <a class="next">&#10095;</a>
     </div>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <script>
         /* ── Hamburger ─────────────────────────────────────────────── */
@@ -1042,6 +1174,17 @@
             currentIndex = (currentIndex + 1) % cards.length;
             showImage(currentIndex);
         });
+
+        /* ── Scroll-to-top ──────────────────────────────────────── */
+        (function() {
+            var btn = document.getElementById('scroll-top-btn');
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
     </script>
 
 </body>
