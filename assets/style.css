@@ -51,7 +51,7 @@
    RESET
    ================================================================ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: hidden; }
 img  { display: block; max-width: 100%; }
 
 /* ================================================================
@@ -60,6 +60,7 @@ img  { display: block; max-width: 100%; }
 body {
   font-family: var(--f-sans);
   background-color: var(--bg);
+  overflow-x: hidden;
   /* Subtle ambient gradient blobs to dissolve hard edges */
   background-image:
     radial-gradient(ellipse 90% 60% at 12% 18%, rgba(255,255,255,0.92) 0%, transparent 55%),
