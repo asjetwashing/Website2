@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>Page Not Found | All Saints Jet Washing</title>
+    <meta name="description" content="That page could not be found. Return to All Saints Jet Washing or explore our exterior cleaning services in Bromsgrove.">
+    <link rel="stylesheet" href="/assets/style.css" onerror="this.onerror=null; this.href='assets/style.css';">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="error-body">
+    <header>
+        <div class="logo">
+            <a href="/">
+                <i class="fa-solid fa-fleur-de-lis" aria-hidden="true" style="color: var(--gold); margin-right: 10px; font-size: 1.3rem;"></i>
+                All Saints Jet Washing
+            </a>
+        </div>
+        <button class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/jet-washing-bromsgrove.html">Jet Washing</a></li>
+                <li><a href="/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
+                <li><a href="/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="/gallery-bromsgrove.html">Gallery</a></li>
+                <li><a href="/reviews-bromsgrove.html">Reviews</a></li>
+                <li><a href="/contact-us-bromsgrove.html" class="cta-button-header-pill">Contact Us</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/jet-washing-bromsgrove.html">Jet Washing</a></li>
+                <li><a href="/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
+                <li><a href="/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                <li><a href="/gallery-bromsgrove.html">Gallery</a></li>
+                <li><a href="/reviews-bromsgrove.html">Reviews</a></li>
+                <li><a href="/contact-us-bromsgrove.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="error-main">
+        <section class="error-hero" aria-labelledby="error-title">
+            <div class="error-copy">
+                <span class="error-kicker">404 &nbsp;·&nbsp; PAGE NOT FOUND</span>
+                <h1 id="error-title">This page is<br><em>out of reach.</em></h1>
+                <div class="error-rule" aria-hidden="true"></div>
+                <p>The address may have changed, or the link may be out of date. Let us point you back in the right direction.</p>
+
+                <div class="error-actions">
+                    <a class="btn-olive-gold" href="/">
+                        Return home <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn-transparent-spark" href="/contact-us-bromsgrove.html">
+                        Contact us <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <nav class="error-shortcuts" aria-label="Popular pages">
+                    <span>Popular pages</span>
+                    <a href="/jet-washing-bromsgrove.html">Jet Washing</a>
+                    <a href="/gutter-vac-bromsgrove.html">Gutter Vac</a>
+                    <a href="/gallery-bromsgrove.html">Gallery</a>
+                </nav>
+            </div>
+
+            <div class="error-visual" aria-hidden="true">
+                <span class="error-watermark">404</span>
+                <div class="error-image-frame">
+                    <img src="/assets/residential-window-cleaning-bromsgrove-2.webp"
+                         onerror="this.onerror=null; this.src='assets/residential-window-cleaning-bromsgrove-2.webp';"
+                         alt=""
+                         width="600"
+                         height="680">
+                </div>
+                <div class="error-status-card">
+                    <span class="error-status-icon"><i class="fa-solid fa-location-dot"></i></span>
+                    <span>
+                        <strong>Page not found</strong>
+                        <small>Let’s get you back on track</small>
+                    </span>
+                </div>
+                <span class="error-detail-line"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All Saints Jet Washing</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = hamburger.classList.toggle('active');
+            nav.classList.toggle('active', isOpen);
+            hamburger.setAttribute('aria-expanded', String(isOpen));
+            hamburger.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+        });
+    </script>
+</body>
+</html>
