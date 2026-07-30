@@ -27,7 +27,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/jet-washing-bromsgrove.html">Jet Washing</a></li>
                 <li><a href="/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
-                <li><a href="/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="/fascia-cleaning-bromsgrove.html">Fascia Cleaning</a></li>
                 <li><a href="/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="/reviews-bromsgrove.html">Reviews</a></li>
@@ -39,7 +39,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/jet-washing-bromsgrove.html">Jet Washing</a></li>
                 <li><a href="/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
-                <li><a href="/facia-cleaning-bromsgrove.html">Facia Cleaning</a></li>
+                <li><a href="/fascia-cleaning-bromsgrove.html">Fascia Cleaning</a></li>
                 <li><a href="/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
                 <li><a href="/gallery-bromsgrove.html">Gallery</a></li>
                 <li><a href="/reviews-bromsgrove.html">Reviews</a></li>
@@ -74,13 +74,12 @@
             </div>
 
             <div class="error-visual" aria-hidden="true">
-                <span class="error-watermark">404</span>
                 <div class="error-image-frame">
                     <img src="/assets/residential-window-cleaning-bromsgrove-2.webp"
                          onerror="this.onerror=null; this.src='assets/residential-window-cleaning-bromsgrove-2.webp';"
                          alt=""
                          width="600"
-                         height="680">
+                         height="680" loading="eager" decoding="async" fetchpriority="high">
                 </div>
                 <div class="error-status-card">
                     <span class="error-status-icon"><i class="fa-solid fa-location-dot"></i></span>
@@ -94,8 +93,58 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 All Saints Jet Washing</p>
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <span class="footer-logo-mark"><i class="fa-solid fa-droplet" aria-hidden="true"></i></span>
+                        <span>All Saints Jet Washing</span>
+                    </a>
+                    <p class="footer-brand-copy">Professional exterior cleaning for homes and businesses across Bromsgrove and the surrounding areas.</p>
+                    <div class="footer-trust" aria-label="Service assurances">
+                        <span><i class="fa-solid fa-star"></i> 5-star rated</span>
+                        <span><i class="fa-solid fa-shield-halved"></i> Fully insured</span>
+                    </div>
+                </div>
+                <nav class="footer-column" aria-label="Footer navigation">
+                    <h2>Explore</h2>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/gallery-bromsgrove.html">Gallery</a></li>
+                        <li><a href="/reviews-bromsgrove.html">Reviews</a></li>
+                        <li><a href="/contact-us-bromsgrove.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-column" aria-label="Exterior cleaning services">
+                    <h2>Services</h2>
+                    <ul class="footer-links">
+                        <li><a href="/jet-washing-bromsgrove.html">Jet Washing</a></li>
+                        <li><a href="/gutter-vac-bromsgrove.html">Gutter Vac</a></li>
+                        <li><a href="/fascia-cleaning-bromsgrove.html">Fascia &amp; Soffits</a></li>
+                        <li><a href="/window-cleaning-bromsgrove.html">Window Cleaning</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-cta">
+                    <h2>Free, no-obligation quotes</h2>
+                    <p class="footer-cta-title">Ready to refresh your exterior?</p>
+                    <a href="/contact-us-bromsgrove.html" class="footer-quote-button">
+                        <span>Get a free quote</span>
+                        <span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                    </a>
+                    <div class="footer-contact-row" aria-label="Contact options">
+                        <a href="tel:07940188231" aria-label="Call All Saints Jet Washing"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://wa.me/447940188231" target="_blank" rel="noopener" aria-label="Message us on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100090859661130" target="_blank" rel="noopener" aria-label="Visit our Facebook page"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="tel:07940188231" class="footer-phone">07940 188231</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 All Saints Jet Washing. All rights reserved.</p>
+                <span class="footer-local"><i class="fa-solid fa-location-dot"></i> Proudly serving Bromsgrove</span>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -109,5 +158,6 @@
             hamburger.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
         });
     </script>
+    <script src="/assets/lazy-images.js" defer onerror="this.onerror=null;this.src='assets/lazy-images.js';"></script>
 </body>
 </html>
