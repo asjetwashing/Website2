@@ -317,6 +317,15 @@
             .filter-btn { flex: 1; justify-content: center; font-size: 0.7rem; padding: 0.45rem 0.5rem; }
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18227484520"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-18227484520');
+    </script>
 </head>
 <body>
     <header>
@@ -1048,5 +1057,25 @@
         });
     </script>
     <script src="/assets/lazy-images.js" defer onerror="this.onerror=null;this.src='assets/lazy-images.js';"></script>
+    <!-- Phone / WhatsApp click tracking for Google Ads -->
+    <script>
+    (function() {
+      function fireEvent(name) {
+        if (typeof gtag === 'function') {
+          gtag('event', name, { event_category: 'contact', event_label: window.location.pathname });
+        }
+      }
+      document.addEventListener('click', function(e) {
+        var a = e.target.closest ? e.target.closest('a[href]') : null;
+        if (!a) return;
+        var href = a.getAttribute('href') || '';
+        if (href.indexOf('tel:') === 0) {
+          fireEvent('phone_click');
+        } else if (href.indexOf('wa.me') !== -1) {
+          fireEvent('whatsapp_click');
+        }
+      }, { passive: true });
+    })();
+    </script>
 </body>
 </html>
